@@ -27,6 +27,5 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void CheckForCollision(AActor* ActorColl);
 private:
-	
-	bool IsHasPhysics(AActor* Act);
+	static UPrimitiveComponent* IsHasPhysics(AActor* Act);
 };

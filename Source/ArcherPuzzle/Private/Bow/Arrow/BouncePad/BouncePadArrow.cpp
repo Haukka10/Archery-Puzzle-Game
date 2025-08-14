@@ -36,23 +36,25 @@ void UBouncePadArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 void UBouncePadArrow::CheckForCollision(AActor* ActorColl)
 {
-	if (IsHasPhysics(ActorColl))
+	const auto UPrim = IsHasPhysics(ActorColl);
+	if (UPrim == nullptr)
+		return;
+	
+	const auto PlayerLuch = Cast<AArcherPuzzleCharacter>(ActorColl);
+	if (PlayerLuch == nullptr)
 	{
-		const auto PlayerLuch = Cast<AArcherPuzzleCharacter>(ActorColl);
-		if (PlayerLuch == nullptr)
-		{
-			const auto Prim = Cast<UPrimitiveComponent>(ActorColl);
-			if (Prim == nullptr)
-				return;
-
-		}
-		PlayerLuch->LaunchCharacter({0,0,5000},false,false);
+		UPrim->AddImpulse({0, 0, 500},NAME_None,false);
+		return;
 	}
+	
+	PlayerLuch->LaunchCharacter({0,0,5000},false,false);
 }
 
-bool UBouncePadArrow::IsHasPhysics(AActor* Act)
+UPrimitiveComponent* UBouncePadArrow::IsHasPhysics(AActor* Act)
 {
+	if (const auto Prim = Cast<UPrimitiveComponent>(Act); Prim == nullptr)
+		return Prim;
 	
-	return true;
+	return nullptr;
 }
 
