@@ -25,7 +25,8 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
 	UFUNCTION(BlueprintCallable)
-	void CheckForCollision(AActor* ActorColl);
-private:
-	static UPrimitiveComponent* IsHasPhysics(AActor* Act);
+	void SpawnBouncePadObj();
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	TSubclassOf<AActor> BounceActor;
 };

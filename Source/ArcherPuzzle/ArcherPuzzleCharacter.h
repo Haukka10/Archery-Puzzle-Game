@@ -65,6 +65,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
 	class UInputAction* ForSlotAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
+	class UInputAction* FiveSlotAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
+	class UInputAction* SixSlotAction;
 	
 public:
 	AArcherPuzzleCharacter();

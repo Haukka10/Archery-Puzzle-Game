@@ -3,7 +3,6 @@
 
 #include "Bow/Arrow/BouncePad/BouncePadArrow.h"
 
-#include "ArcherPuzzleCharacter.h"
 // WORK IN PROGRESS
 // Sets default values for this component's properties
 UBouncePadArrow::UBouncePadArrow()
@@ -34,27 +33,12 @@ void UBouncePadArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// ...
 }
 
-void UBouncePadArrow::CheckForCollision(AActor* ActorColl)
+void UBouncePadArrow::SpawnBouncePadObj()
 {
-	const auto UPrim = IsHasPhysics(ActorColl);
-	if (UPrim == nullptr)
+	UWorld* World = GetWorld();
+	if (World == nullptr)
 		return;
 	
-	const auto PlayerLuch = Cast<AArcherPuzzleCharacter>(ActorColl);
-	if (PlayerLuch == nullptr)
-	{
-		UPrim->AddImpulse({0, 0, 500},NAME_None,false);
-		return;
-	}
-	
-	PlayerLuch->LaunchCharacter({0,0,5000},false,false);
+	const FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
+	World->SpawnActor(BounceActor,&OwnerTrans);
 }
-
-UPrimitiveComponent* UBouncePadArrow::IsHasPhysics(AActor* Act)
-{
-	if (const auto Prim = Cast<UPrimitiveComponent>(Act); Prim == nullptr)
-		return Prim;
-	
-	return nullptr;
-}
-
