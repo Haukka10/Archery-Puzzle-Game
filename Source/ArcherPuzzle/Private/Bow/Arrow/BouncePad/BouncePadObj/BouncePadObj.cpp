@@ -4,6 +4,7 @@
 #include "Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h"
 
 #include "ArcherPuzzleCharacter.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 ABouncePadObj::ABouncePadObj()
@@ -29,21 +30,39 @@ void ABouncePadObj::Tick(float DeltaTime)
 
 void ABouncePadObj::BounceComponent(AActor* Actor)
 {
-	const auto UPrim = IsHasPhysics(Actor);
-	if (UPrim == nullptr)
-		return;
+	FVector BounceNormal = Actor->GetActorUpVector(); // Default: pad faces upward
+	FVector Velocity = FVector::ZeroVector;
 	
-	FVector Vel = UPrim->GetComponentVelocity();
-	FVector BounceNormal = Actor->GetActorForwardVector().GetSafeNormal();
+	const auto UPrim = IsHasPhysics(Actor);
+	if (UPrim)
+	{
+		/*FVector Vel = UPrim->GetComponentVelocity();
+		FVector BounceNormal = Actor->GetActorForwardVector().GetSafeNormal();
 
-	const float SpeedIntoBounce = FVector::DotProduct(Vel, BounceNormal);
-	const float BounceSpeed = FMath::Max(SpeedIntoBounce * 1.25,25);
+		float SpeedIntoPad = FVector::DotProduct(Vel, BounceNormal);
+		float BounceSpeed = FMath::Max(SpeedIntoPad * 1.25, 25);
 
-	const FVector TangentVelocity = Vel - FVector::DotProduct(Vel, BounceNormal) * BounceNormal;
+		const FVector TangentVelocity = Vel - FVector::DotProduct(Vel, BounceNormal) * BounceNormal;
 
-	const FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
+		const FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
 
-	UPrim->SetPhysicsLinearVelocity(NewVelocity, false);
+		UPrim->SetPhysicsLinearVelocity(NewVelocity, false);*/
+	}
+	
+	if (const ACharacter* Char = Cast<ACharacter>(Actor))
+	{
+		Velocity = Char->GetVelocity();
+		float SpeedIntoPad = FVector::DotProduct(Velocity, -BounceNormal);
+		float BounceSpeed = FMath::Max(SpeedIntoPad * 1.35, 25);
+
+		FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, BounceNormal) * BounceNormal;
+		FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
+
+		if (UCharacterMovementComponent* MoveComp = Char->GetCharacterMovement())
+		{
+			MoveComp->Velocity = NewVelocity;
+		}
+	}
 }
 
 UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)

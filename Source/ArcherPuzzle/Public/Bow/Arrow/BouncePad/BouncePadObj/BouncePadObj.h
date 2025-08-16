@@ -29,4 +29,6 @@ public:
 private:
 	static UPrimitiveComponent* IsHasPhysics(AActor* Act);
 
+	FVector BounceStrength(float Velocity);
+
 };
