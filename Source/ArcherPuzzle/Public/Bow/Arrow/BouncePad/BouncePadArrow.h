@@ -25,7 +25,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
 	UFUNCTION(BlueprintCallable)
-	void SpawnBouncePadObj();
+	void SpawnBouncePadObj(FVector SpawnVector);
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	TSubclassOf<AActor> BounceActor;

@@ -33,12 +33,12 @@ void UBouncePadArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// ...
 }
 
-void UBouncePadArrow::SpawnBouncePadObj()
+void UBouncePadArrow::SpawnBouncePadObj(const FVector SpawnVector)
 {
 	UWorld* World = GetWorld();
 	if (World == nullptr)
 		return;
 	
-	const FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
-	World->SpawnActor(BounceActor,&OwnerTrans);
+	const FActorSpawnParameters SpawnInfo;
+	World->SpawnActor<AActor>(BounceActor,SpawnVector,FRotator(0, 90, 0), SpawnInfo);
 }

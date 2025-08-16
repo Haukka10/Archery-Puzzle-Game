@@ -27,27 +27,31 @@ void ABouncePadObj::Tick(float DeltaTime)
 
 }
 
-void ABouncePadObj::AddBounce(AActor* Actor)
+void ABouncePadObj::BounceComponent(AActor* Actor)
 {
 	const auto UPrim = IsHasPhysics(Actor);
 	if (UPrim == nullptr)
 		return;
 	
-	const auto PlayerLuch = Cast<AArcherPuzzleCharacter>(Actor);
-	if (PlayerLuch == nullptr)
-	{
-		UPrim->AddImpulse({0, 0, 500},NAME_None,false);
-		return;
-	}
-	
-	PlayerLuch->LaunchCharacter({0,0,5000},false,false);
+	FVector Vel = UPrim->GetComponentVelocity();
+	FVector BounceNormal = Actor->GetActorForwardVector().GetSafeNormal();
+
+	const float SpeedIntoBounce = FVector::DotProduct(Vel, BounceNormal);
+	const float BounceSpeed = FMath::Max(SpeedIntoBounce * 1.25,25);
+
+	const FVector TangentVelocity = Vel - FVector::DotProduct(Vel, BounceNormal) * BounceNormal;
+
+	const FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
+
+	UPrim->SetPhysicsLinearVelocity(NewVelocity, false);
 }
 
 UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 {
-	if (const auto Prim = Cast<UPrimitiveComponent>(Act); Prim == nullptr)
-		return Prim;
+	const auto Prim = Cast<UPrimitiveComponent>(Act);
+	if (Prim == nullptr)
+		return nullptr;
 	
-	return nullptr;
+	return Prim;
 }
 
