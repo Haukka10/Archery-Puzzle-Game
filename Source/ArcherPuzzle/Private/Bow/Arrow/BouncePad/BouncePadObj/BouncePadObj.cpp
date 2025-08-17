@@ -68,7 +68,7 @@ UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 /// Calculation new bounce strength
 /// @param Velocity Current velocity 
 /// @param UpVector Up Vector of the actor
-/// @return New Veloctiy
+/// @return New Velocity
 FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& UpVector)
 {
 
