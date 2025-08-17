@@ -30,41 +30,32 @@ void ABouncePadObj::Tick(float DeltaTime)
 
 void ABouncePadObj::BounceComponent(AActor* Actor)
 {
-	FVector BounceNormal = Actor->GetActorUpVector(); // Default: pad faces upward
-	FVector Velocity = FVector::ZeroVector;
-	
+	// Get Up Vector
+	const FVector BounceNormal = Actor->GetActorUpVector();
+	// Check if this actor is a physics actor
 	const auto UPrim = IsHasPhysics(Actor);
 	if (UPrim)
 	{
-		/*FVector Vel = UPrim->GetComponentVelocity();
-		FVector BounceNormal = Actor->GetActorForwardVector().GetSafeNormal();
-
-		float SpeedIntoPad = FVector::DotProduct(Vel, BounceNormal);
-		float BounceSpeed = FMath::Max(SpeedIntoPad * 1.25, 25);
-
-		const FVector TangentVelocity = Vel - FVector::DotProduct(Vel, BounceNormal) * BounceNormal;
-
-		const FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
-
-		UPrim->SetPhysicsLinearVelocity(NewVelocity, false);*/
+		const FVector Velocity = BounceStrength(UPrim->GetComponentVelocity(), UPrim->GetForwardVector());
+		UPrim->SetPhysicsLinearVelocity(Velocity, false);
 	}
-	
+	//Check if this actor is a Character
 	if (const ACharacter* Char = Cast<ACharacter>(Actor))
 	{
-		Velocity = Char->GetVelocity();
-		float SpeedIntoPad = FVector::DotProduct(Velocity, -BounceNormal);
-		float BounceSpeed = FMath::Max(SpeedIntoPad * 1.35, 25);
-
-		FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, BounceNormal) * BounceNormal;
-		FVector NewVelocity = TangentVelocity + BounceNormal * BounceSpeed;
+		//Set new bounce strength
+		const FVector NewVel = BounceStrength(Actor->GetVelocity(),BounceNormal);
 
 		if (UCharacterMovementComponent* MoveComp = Char->GetCharacterMovement())
 		{
-			MoveComp->Velocity = NewVelocity;
+			// Adds new speed to the character
+			MoveComp->Velocity = NewVel;
 		}
 	}
 }
 
+/// Check is actor have a PrimitiveComponent
+/// @param Act 
+/// @return nullptr or primitiveComponent
 UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 {
 	const auto Prim = Cast<UPrimitiveComponent>(Act);
@@ -72,5 +63,24 @@ UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 		return nullptr;
 	
 	return Prim;
+}
+
+/// Calculation new bounce strength
+/// @param Velocity Current velocity 
+/// @param UpVector Up Vector of the actor
+/// @return New Veloctiy
+FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& UpVector)
+{
+
+	const float SpeedIntoPad = FVector::DotProduct(Velocity, -UpVector);
+	const float BounceSpeed = FMath::Max(SpeedIntoPad * 1.20, 20);
+
+	const FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, UpVector) * UpVector;
+	const FVector NewVelocity = TangentVelocity + UpVector * BounceSpeed;
+	
+	if (Velocity.Z >= -1700.F)
+		return NewVelocity;
+	
+	return {0,0,1800};
 }
 
