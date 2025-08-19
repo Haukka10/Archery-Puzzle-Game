@@ -39,7 +39,7 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 	const auto UPrim = IsHasPhysics(Actor);
 	if (const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>())
 	{
-		const FVector BoostedVelocity = BounceStrength(Arrow->Velocity, Actor->GetActorForwardVector());
+		const FVector BoostedVelocity = BounceStrength(Arrow->Velocity, BounceNormal);
 		
 		Arrow->Velocity = BoostedVelocity;
 		Arrow->UpdateComponentVelocity();
@@ -89,9 +89,12 @@ FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& Up
 	const FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, UpVector) * UpVector;
 	const FVector NewVelocity = TangentVelocity + UpVector * BounceSpeed;
 	
+	if (FMath::IsNaN(NewVelocity.Z) && FMath::IsNaN(NewVelocity.X) && FMath::IsNaN(NewVelocity.Y))
+		return UpVector;
+	
 	if (Velocity.Z >= -1700.F)
 		return NewVelocity;
-	
+
 	return {0,0,1800};
 }
 
