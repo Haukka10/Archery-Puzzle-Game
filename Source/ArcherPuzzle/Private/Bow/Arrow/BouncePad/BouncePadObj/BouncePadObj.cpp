@@ -5,13 +5,14 @@
 
 #include "ArcherPuzzleCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 
 // Sets default values
 ABouncePadObj::ABouncePadObj()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 }
 
 // Called when the game starts or when spawned
@@ -32,8 +33,18 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 {
 	// Get Up Vector
 	const FVector BounceNormal = Actor->GetActorUpVector();
+	BounceMultiplier = 1.32f;
+	MinBounceSpeed = 25;
 	// Check if this actor is a physics actor
 	const auto UPrim = IsHasPhysics(Actor);
+	if (const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>())
+	{
+		const FVector BoostedVelocity = BounceStrength(Arrow->Velocity, Actor->GetActorForwardVector());
+		
+		Arrow->Velocity = BoostedVelocity;
+		Arrow->UpdateComponentVelocity();
+	}
+	
 	if (UPrim)
 	{
 		const FVector Velocity = BounceStrength(UPrim->GetComponentVelocity(), UPrim->GetForwardVector());
@@ -69,11 +80,11 @@ UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 /// @param Velocity Current velocity 
 /// @param UpVector Up Vector of the actor
 /// @return New Velocity
-FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& UpVector)
+FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& UpVector) const
 {
-
+	
 	const float SpeedIntoPad = FVector::DotProduct(Velocity, -UpVector);
-	const float BounceSpeed = FMath::Max(SpeedIntoPad * 1.20, 20);
+	const float BounceSpeed = FMath::Max(SpeedIntoPad * BounceMultiplier, MinBounceSpeed);
 
 	const FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, UpVector) * UpVector;
 	const FVector NewVelocity = TangentVelocity + UpVector * BounceSpeed;

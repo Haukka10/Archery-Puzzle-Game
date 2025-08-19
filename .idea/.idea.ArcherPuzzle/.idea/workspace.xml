@@ -13,8 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Bow/Arrow/ArrowProp/BP_BouncePadArrow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Bow/Arrow/ArrowProp/BP_BouncePadArrow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Bow/Arrow/ObjForArrow/BP_BouncePadObj.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Bow/Arrow/ObjForArrow/BP_BouncePadObj.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" afterDir="false" />
     </list>
@@ -42,7 +43,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://8" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetStatusButton.h" root0="FORCE_HIGHLIGHTING" />
@@ -241,7 +242,8 @@
       <workItem from="1755349801378" duration="3432000" />
       <workItem from="1755353466596" duration="727000" />
       <workItem from="1755376111238" duration="3221000" />
-      <workItem from="1755437029374" duration="3342000" />
+      <workItem from="1755437029374" duration="3813000" />
+      <workItem from="1755607310590" duration="3921000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -275,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755379270173</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Set limit on Bounce Strength">
+      <option name="closed" value="true" />
+      <created>1755440614369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755440614369</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix typo">
+      <option name="closed" value="true" />
+      <created>1755440857714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755440857714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +307,9 @@
     <MESSAGE value="Add Spawn Bounce pad and add basic functions. Add more inputs." />
     <MESSAGE value="Add Bounce effect" />
     <MESSAGE value="Add Bounce to Main Character" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Bounce to Main Character" />
+    <MESSAGE value="Set limit on Bounce Strength" />
+    <MESSAGE value="Fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

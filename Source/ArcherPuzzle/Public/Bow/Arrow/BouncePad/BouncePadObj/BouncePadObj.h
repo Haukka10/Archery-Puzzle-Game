@@ -24,11 +24,16 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	static void BounceComponent(AActor* Actor);
+	void BounceComponent(AActor* Actor);
 
 private:
 	static UPrimitiveComponent* IsHasPhysics(AActor* Act);
 
-	static FVector BounceStrength(const FVector& Velocity, const FVector& UpVector);
-
+	FVector BounceStrength(const FVector& Velocity, const FVector& UpVector) const;
+	
+	UPROPERTY()
+	float BounceMultiplier;
+	
+	UPROPERTY()
+	float MinBounceSpeed;
 };
