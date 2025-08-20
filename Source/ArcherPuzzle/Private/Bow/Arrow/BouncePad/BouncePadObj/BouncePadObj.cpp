@@ -35,16 +35,16 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 	const FVector BounceNormal = Actor->GetActorUpVector();
 	BounceMultiplier = 1.32f;
 	MinBounceSpeed = 25;
-	// Check if this actor is a physics actor
 	const auto UPrim = IsHasPhysics(Actor);
+	// Check if this actor is an Arrows
 	if (const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>())
 	{
-		const FVector BoostedVelocity = BounceStrength(Arrow->Velocity, BounceNormal);
+		const FVector BoostedVelocity = BounceStrength(Arrow->Velocity, Arrow->UpdatedComponent->GetForwardVector());
 		
 		Arrow->Velocity = BoostedVelocity;
 		Arrow->UpdateComponentVelocity();
 	}
-	
+	// Check if this actor is a physics actor
 	if (UPrim)
 	{
 		const FVector Velocity = BounceStrength(UPrim->GetComponentVelocity(), UPrim->GetForwardVector());
