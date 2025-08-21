@@ -12,8 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +85,8 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Private/SlotBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Public/SlotBase.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -243,7 +246,9 @@
       <workItem from="1755437029374" duration="3813000" />
       <workItem from="1755607310590" duration="4346000" />
       <workItem from="1755631616381" duration="5384000" />
-      <workItem from="1755716556161" duration="996000" />
+      <workItem from="1755716556161" duration="1213000" />
+      <workItem from="1755783436760" duration="1059000" />
+      <workItem from="1755808474981" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -309,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755636976690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add ForwardVector to Arrow check in BouncePadObj.cpp">
+      <option name="closed" value="true" />
+      <created>1755717759674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755717759674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +340,8 @@
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Add effect to a arrows" />
     <MESSAGE value="Check for NAN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check for NAN" />
+    <MESSAGE value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
