@@ -32,3 +32,43 @@ void UPhaseArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 	// ...
 }
 
+void UPhaseArrow::AddWall(AActor* Actor)
+{
+	M_WallActor = Actor;
+	
+	TArray<UStaticMeshComponent*> Comps;
+	Actor->GetComponents<UStaticMeshComponent>(Comps);
+	if (Comps.Num() > 0)
+	{
+		const UStaticMeshComponent* FoundComp = Comps[0];
+		UMaterialInterface* Mat = FoundComp->GetMaterial(0);
+		if (Mat)
+		{
+			M_PreWallMaterial = Mat;
+		}
+	}
+
+	PrimComp = Actor->FindComponentByClass<UPrimitiveComponent>();
+	if (PrimComp)
+	{
+		M_WallCollision = PrimComp->GetCollisionEnabled();
+	}
+	ChangeProperty();
+}
+
+void UPhaseArrow::ResetWall()
+{
+	auto c= M_WallActor->GetComponentByClass<UStaticMeshComponent>();
+	c->SetMaterial(0,M_PreWallMaterial);
+	PrimComp->SetCollisionEnabled(M_WallCollision);
+}
+
+void UPhaseArrow::ChangeProperty() const
+{
+	//Set new material
+	const auto Mat = M_WallActor->GetComponentByClass<UStaticMeshComponent>();
+	Mat->SetMaterial(0 ,WallMaterial);
+	
+	//Set new Collision to NoCollision 
+	PrimComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+}

@@ -24,5 +24,28 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UMaterialInterface* WallMaterial;
+
+	UFUNCTION(BlueprintCallable)
+	void AddWall(AActor* Actor);
+
+	UFUNCTION(BlueprintCallable)
+	void ResetWall();
+	
+private:
+	
+	UFUNCTION()
+	void ChangeProperty() const;
+
+	UPROPERTY()
+	AActor* M_WallActor = nullptr;
+
+	UPROPERTY()
+	UMaterialInterface* M_PreWallMaterial = nullptr;
+	
+	ECollisionEnabled::Type	M_WallCollision = ECollisionEnabled::Type::QueryAndPhysics;
+	
+	UPROPERTY()
+	UPrimitiveComponent* PrimComp = nullptr;
 };
