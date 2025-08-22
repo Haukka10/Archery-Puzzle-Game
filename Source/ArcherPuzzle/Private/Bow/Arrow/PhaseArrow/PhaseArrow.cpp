@@ -56,7 +56,7 @@ void UPhaseArrow::AddWall(AActor* Actor)
 	ChangeProperty();
 }
 
-void UPhaseArrow::ResetWall()
+void UPhaseArrow::ResetWall() const
 {
 	auto c= M_WallActor->GetComponentByClass<UStaticMeshComponent>();
 	c->SetMaterial(0,M_PreWallMaterial);

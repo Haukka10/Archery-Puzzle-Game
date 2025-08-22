@@ -31,7 +31,7 @@ public:
 	void AddWall(AActor* Actor);
 
 	UFUNCTION(BlueprintCallable)
-	void ResetWall();
+	void ResetWall() const;
 	
 private:
 	
