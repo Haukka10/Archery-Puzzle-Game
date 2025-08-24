@@ -13,9 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,6 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
-    <setting file="cidr-memory-view://1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetStatusButton.h" root0="FORCE_HIGHLIGHTING" />
@@ -251,7 +247,8 @@
       <workItem from="1755716556161" duration="1213000" />
       <workItem from="1755783436760" duration="1059000" />
       <workItem from="1755808474981" duration="932000" />
-      <workItem from="1755874259882" duration="5000000" />
+      <workItem from="1755874259882" duration="5178000" />
+      <workItem from="1756054632333" duration="2419000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -333,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755809369827</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Make a working code for PhaseArrow.h and PhaseArrow.cpp">
+      <option name="closed" value="true" />
+      <created>1755880487692</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1755880487692</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add const to ResetWall">
+      <option name="closed" value="true" />
+      <created>1755880512391</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1755880512391</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +366,9 @@
     <MESSAGE value="Check for NAN" />
     <MESSAGE value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
     <MESSAGE value="Set up code for PhaseArrow.cpp and PhaseArrow.h" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up code for PhaseArrow.cpp and PhaseArrow.h" />
+    <MESSAGE value="Make a working code for PhaseArrow.h and PhaseArrow.cpp" />
+    <MESSAGE value="Add const to ResetWall" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add const to ResetWall" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
