@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Levels/Level3.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Level2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Level2.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +253,8 @@
       <workItem from="1756054632333" duration="2575000" />
       <workItem from="1756129349879" duration="1084000" />
       <workItem from="1756132167643" duration="5000" />
-      <workItem from="1756141848033" duration="1214000" />
+      <workItem from="1756141848033" duration="1330000" />
+      <workItem from="1756152562035" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -365,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756132034526</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Make a 1 and 2 levels">
+      <option name="closed" value="true" />
+      <created>1756144100497</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756144100497</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +400,8 @@
     <MESSAGE value="Add const to ResetWall" />
     <MESSAGE value="Add level 1" />
     <MESSAGE value="Add Level2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Level2" />
+    <MESSAGE value="Make a 1 and 2 levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make a 1 and 2 levels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
