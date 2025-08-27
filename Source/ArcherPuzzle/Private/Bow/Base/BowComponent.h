@@ -20,8 +20,8 @@ public:
 	void ShootArrow() const;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|List")
-	TArray<TSubclassOf<AActor>> ArrowActors; // List of the Actor to spawn arrow when player shooting
-	
+	TMap<TSubclassOf<AActor>,float> ArrowCooldown; // List of the Actor to spawn arrow when player shooting
+
 	UFUNCTION()
 	void ChangeArrow(int index);
 
@@ -43,12 +43,26 @@ private:
 	TSubclassOf<AActor> M_CurrentArrowShoot = nullptr;
 
 	UPROPERTY()
+	TArray<TSubclassOf<AActor>> M_ArrowActors;
+
+	UPROPERTY()
 	uint8 M_IndexOfArrow = 0;
 
+	UPROPERTY()
+	mutable bool M_IsCountDown = false;
+
+	UPROPERTY()
+	mutable bool M_IsCanShoot = true;
+	
 	UFUNCTION()
 	bool CanShoot() const;
 
 	UFUNCTION()
 	bool CanChangeArrow();
 	
+	UFUNCTION()
+	bool IsTimerStart() const;
+	
+	UFUNCTION()
+	void IsTimerDone() const;
 };

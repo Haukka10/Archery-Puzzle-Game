@@ -58,7 +58,7 @@ void UPhaseArrow::AddWall(AActor* Actor)
 
 void UPhaseArrow::ResetWall() const
 {
-	auto c= M_WallActor->GetComponentByClass<UStaticMeshComponent>();
+	auto c = M_WallActor->GetComponentByClass<UStaticMeshComponent>();
 	c->SetMaterial(0,M_PreWallMaterial);
 	PrimComp->SetCollisionEnabled(M_WallCollision);
 }
