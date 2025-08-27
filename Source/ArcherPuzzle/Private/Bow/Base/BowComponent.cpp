@@ -15,6 +15,9 @@ UBowComponent::UBowComponent()
 	// ...
 }
 
+///
+/// Check for shooting arrow and length of the list 
+/// @return 
 bool UBowComponent::CanShoot() const
 {
 	if (M_CurrentArrowShoot == nullptr)
@@ -25,6 +28,9 @@ bool UBowComponent::CanShoot() const
 	return true;
 }
 
+///
+/// Check for the changing arrow 
+/// @return true or false according to the checks
 bool UBowComponent::CanChangeArrow()
 {
 
@@ -44,6 +50,9 @@ bool UBowComponent::CanChangeArrow()
 	return true;
 }
 
+///
+/// fuc for Change arrow
+/// @param index index of the arrow 
 void UBowComponent::ChangeArrow(int index)
 {
 	M_IndexOfArrow = index;
@@ -54,6 +63,7 @@ void UBowComponent::ChangeArrow(int index)
 	}
 	M_CurrentArrowShoot = M_ArrowActors[M_IndexOfArrow];
 }
+// Make a Timer Handle
 FTimerHandle MyTimerHandle;
 bool UBowComponent::IsTimerStart() const
 {
@@ -68,7 +78,9 @@ void UBowComponent::IsTimerDone() const
 	GetWorld()->GetTimerManager().ClearTimer(MyTimerHandle);
 	M_IsCanShoot = true;
 }
-
+///
+///	Fuc for shooting the arrows and spawn actor for the arrows
+///
 void UBowComponent::ShootArrow() const
 {
 	if (!M_IsCanShoot)
@@ -95,16 +107,18 @@ void UBowComponent::ShootArrow() const
 void UBowComponent::BeginPlay()
 {
 	Super::BeginPlay();
+	// Check for length of ArrowCooldown map to not break the game
 	if (ArrowCooldown.Num() == 0)
 	{
 		UE_LOG(LogTemp, Error, TEXT("ArrowCooldown map is empty"));
 		return;
 	}
+	// add all arrows to list
 	for (auto const& [v,k] : ArrowCooldown)
 	{
 		M_ArrowActors.Add(v);
 	}
-	
+	//Set default arrow (first item form the list of arrows) 
 	M_CurrentArrowShoot = M_ArrowActors[0];
 }
 
