@@ -11,11 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +253,7 @@
       <workItem from="1756141848033" duration="1330000" />
       <workItem from="1756152562035" duration="843000" />
       <workItem from="1756322225288" duration="4314000" />
-      <workItem from="1756475408739" duration="2384000" />
+      <workItem from="1756475408739" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -403,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756326560949</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Adding documentation to PhaseArrow.cpp">
+      <option name="closed" value="true" />
+      <created>1756478321461</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1756478321461</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +435,8 @@
     <MESSAGE value="Add level 3" />
     <MESSAGE value="Add cooldown for the arrows" />
     <MESSAGE value="Adding documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding documentation" />
+    <MESSAGE value="Adding documentation to PhaseArrow.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding documentation to PhaseArrow.cpp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -69,6 +69,10 @@ bool UBowComponent::IsTimerStart() const
 {
 	M_IsCanShoot = false;
 	auto Time = ArrowCooldown.Find(M_CurrentArrowShoot);
+	
+	if (Time == nullptr)
+		return false;
+	
 	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &UBowComponent::IsTimerDone, *Time, false);
 	return true;
 }
