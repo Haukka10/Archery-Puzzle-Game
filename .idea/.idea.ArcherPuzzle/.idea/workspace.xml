@@ -11,7 +11,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -254,6 +259,7 @@
       <workItem from="1756152562035" duration="843000" />
       <workItem from="1756322225288" duration="4314000" />
       <workItem from="1756475408739" duration="2644000" />
+      <workItem from="1756725158891" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -407,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756478321461</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp">
+      <option name="closed" value="true" />
+      <created>1756729359292</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1756729359292</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +450,8 @@
     <MESSAGE value="Add cooldown for the arrows" />
     <MESSAGE value="Adding documentation" />
     <MESSAGE value="Adding documentation to PhaseArrow.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding documentation to PhaseArrow.cpp" />
+    <MESSAGE value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
