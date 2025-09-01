@@ -35,7 +35,7 @@ void UExplosionArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// ...
 }
 
-void UExplosionArrow::CheckSphere()
+void UExplosionArrow::CheckSphere() const
 {
 	UWorld* World = GetWorld();
 	const FVector Start = GetOwner()->GetActorLocation();

@@ -20,7 +20,7 @@ public:
 	TSubclassOf<AActor> BridgeActor;
 	
 	UFUNCTION(BlueprintCallable)
-	void SpawnBridgeActor();
+	void SpawnBridgeActor() const;
 
 protected:
 	// Called when the game starts

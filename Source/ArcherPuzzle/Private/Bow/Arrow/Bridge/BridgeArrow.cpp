@@ -14,7 +14,7 @@ UBridgeArrow::UBridgeArrow(): M_NewRotator(0,0,0)
 }
 
 
-void UBridgeArrow::SpawnBridgeActor()
+void UBridgeArrow::SpawnBridgeActor() const
 {
 	FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
 	auto br = GetWorld()->SpawnActor<AActor>(BridgeActor);
