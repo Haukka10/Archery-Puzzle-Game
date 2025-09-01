@@ -148,7 +148,7 @@ void AArcherPuzzleCharacter::Shooting()
 	BowComponent->ShootArrow();
 }
 
-void AArcherPuzzleCharacter::ChangeArrowForBow(int index)
+void AArcherPuzzleCharacter::ChangeArrowForBow(int Index)
 {
-	BowComponent->ChangeArrow(index);
+	BowComponent->ChangeArrow(Index);
 }

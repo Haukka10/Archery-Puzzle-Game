@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "InputAction.h"
 #include "GameFramework/Character.h"
-#include "GameFramework/PawnMovementComponent.h"
 #include "Logging/LogMacros.h"
 #include "ArcherPuzzleCharacter.generated.h"
 
@@ -111,7 +110,7 @@ protected:
 	void Shooting();
 
 	UFUNCTION(BlueprintCallable, Category="Input")
-	void ChangeArrowForBow(int index);
+	void ChangeArrowForBow(int Index);
 	
 protected:
 

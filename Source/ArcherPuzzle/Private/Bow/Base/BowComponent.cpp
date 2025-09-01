@@ -3,8 +3,6 @@
 
 #include "Bow/Base/BowComponent.h"
 
-#include "Bow/Arrow/Bridge/BridgeArrow.h"
-
 // Sets default values for this component's properties
 UBowComponent::UBowComponent()
 {

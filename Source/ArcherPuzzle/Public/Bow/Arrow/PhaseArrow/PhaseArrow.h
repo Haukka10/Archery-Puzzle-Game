@@ -25,7 +25,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UMaterialInterface* WallMaterial;
+	UMaterialInterface* WallMaterial = nullptr;
 
 	UFUNCTION(BlueprintCallable)
 	void AddWall(AActor* Actor);
