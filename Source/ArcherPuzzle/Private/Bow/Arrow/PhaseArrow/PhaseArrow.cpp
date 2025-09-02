@@ -72,6 +72,10 @@ void UPhaseArrow::ChangeProperty() const
 {
 	//Set new material
 	const auto Mat = M_WallActor->GetComponentByClass<UStaticMeshComponent>();
+	
+	if (WallMaterial == nullptr)
+		return;
+	
 	Mat->SetMaterial(0 ,WallMaterial);
 	
 	//Set new Collision to NoCollision 

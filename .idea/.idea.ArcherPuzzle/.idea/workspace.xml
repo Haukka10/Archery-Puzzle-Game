@@ -36,7 +36,6 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://2" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetStatusButton.h" root0="FORCE_HIGHLIGHTING" />
@@ -255,6 +254,7 @@
       <workItem from="1756322225288" duration="4314000" />
       <workItem from="1756475408739" duration="2644000" />
       <workItem from="1756725158891" duration="4006000" />
+      <workItem from="1756744446402" duration="701000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -432,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756729877450</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add consts">
+      <option name="closed" value="true" />
+      <created>1756745138178</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1756745138178</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +472,8 @@
     <MESSAGE value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
     <MESSAGE value="Fixes and cleanups" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="Add consts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add consts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
