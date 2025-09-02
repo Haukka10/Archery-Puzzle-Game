@@ -2,8 +2,9 @@
 
 ## Aperture Archery Puzzle Game 🎯🔬
 
-A Portal-inspired physics puzzle game set in a sterile Aperture-like test facility.
-Instead of portals, you wield an experimental modular bow that fires a variety of high-tech arrows, each altering the environment in creative, puzzle-solving ways.
+Step into a sterile, high-tech test facility in this physics-based puzzle adventure. 
+Instead of portals, you command an experimental modular bow, firing a variety of advanced arrows—each with unique effects that manipulate the environment and unlock clever solutions. 
+Solve intricate puzzles, bend physics to your will, and test the limits of your archery ingenuity.
 
 # Experimental Bow & Arrow Types
 
