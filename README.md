@@ -12,11 +12,11 @@ Solve intricate puzzles, bend physics to your will, and test the limits of your 
 
 - Bridge Arrow – create temporary Hard Light bridges across gaps.
 
-- Fly Arrow – generate upward lift fields (like Excursion Funnels).
+- Fly Arrow – generate upward lift fields.
 
 - Teleport Arrow – instantly warp to the arrow’s location.
 
-- Repulsion Arrow – create bounce-pad surfaces (Repulsion Gel style).
+- Repulsion Arrow – create bounce-pad surfaces.
 
 - Tractor Arrow – project horizontal tractor beams to carry objects or the player.
 
