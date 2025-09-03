@@ -69,11 +69,14 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 /// @return nullptr or primitiveComponent
 UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
 {
-	const auto Prim = Cast<UPrimitiveComponent>(Act);
-	if (Prim == nullptr)
+	if (Act == nullptr)
 		return nullptr;
 	
-	return Prim;
+	UPrimitiveComponent* Prim = Cast<UPrimitiveComponent>(Act->GetRootComponent());
+	if (Prim && Prim->IsSimulatingPhysics())
+		return Prim;
+	
+	return nullptr;
 }
 
 /// Calculation new bounce strength

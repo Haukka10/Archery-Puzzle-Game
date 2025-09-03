@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Bow/LockArrows/LockArrows.h"
 #include "Components/ActorComponent.h"
 #include "BowComponent.generated.h"
 
@@ -16,26 +17,26 @@ public:
 	// Sets default values for this component's properties
 	UBowComponent();
 	
-	UFUNCTION()
-	void ShootArrow() const;
-	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|List")
 	TMap<TSubclassOf<AActor>,float> ArrowCooldown; // List of the Actor to spawn arrow when player shooting
 
-	UFUNCTION()
-	void ChangeArrow(int index);
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|SpawnTrnas")
 	FTransform ArrowSpawnTrans;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|Lock")
+	ALockArrows* LockArrows = nullptr;
+
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	UFUNCTION()
+	void ChangeArrow(int Index);
 	
+	UFUNCTION()
+	void ShootArrow() const;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-
-
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
 
@@ -58,10 +59,10 @@ private:
 	bool CanShoot() const;
 
 	UFUNCTION()
-	bool CanChangeArrow();
+	bool CanChangeArrow(const TSubclassOf<AActor>& SelArrow);
 	
 	UFUNCTION()
-	bool IsTimerStart() const;
+	void IsTimerStart() const;
 	
 	UFUNCTION()
 	void IsTimerDone() const;

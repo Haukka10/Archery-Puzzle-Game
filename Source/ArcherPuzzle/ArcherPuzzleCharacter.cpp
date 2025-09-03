@@ -140,7 +140,6 @@ void AArcherPuzzleCharacter::DoJumpEnd()
 
 void AArcherPuzzleCharacter::Shooting()
 {
-	//TODO: Turn off individual arrows
 	if (BowComponent == nullptr)
 		return;
 	
@@ -148,7 +147,7 @@ void AArcherPuzzleCharacter::Shooting()
 	BowComponent->ShootArrow();
 }
 
-void AArcherPuzzleCharacter::ChangeArrowForBow(int Index)
+void AArcherPuzzleCharacter::ChangeArrowForBow(const int Index)
 {
 	BowComponent->ChangeArrow(Index);
 }

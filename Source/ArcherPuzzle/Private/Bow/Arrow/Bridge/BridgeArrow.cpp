@@ -20,7 +20,6 @@ void UBridgeArrow::SpawnBridgeActor() const
 	auto br = GetWorld()->SpawnActor<AActor>(BridgeActor);
 	br->SetActorRotation(FRotator(0, 90, 0));
 	br->SetActorLocation(FVector(OwnerTrans.GetTranslation().X + 20, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z));
-	br->SetLifeSpan(10000);
 }
 
 // Called when the game starts
