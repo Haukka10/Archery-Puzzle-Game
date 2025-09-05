@@ -25,6 +25,10 @@ void ALockArrows::Tick(float DeltaTime)
 
 }
 
+///
+/// Check for the lock arrows 
+/// @param Arrow get all arrows
+/// @return true/false
 bool ALockArrows::IsLockArrow(const TSubclassOf<AActor>& Arrow) const
 {
 	return ArrowsList.Contains(Arrow);

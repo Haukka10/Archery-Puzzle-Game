@@ -33,6 +33,8 @@ void UBouncePadArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// ...
 }
 
+/// Spawn a bounce pad in the world 
+/// @param SpawnVector get vector where to spawn a bounce pad
 void UBouncePadArrow::SpawnBouncePadObj(const FVector SpawnVector)
 {
 	UWorld* World = GetWorld();

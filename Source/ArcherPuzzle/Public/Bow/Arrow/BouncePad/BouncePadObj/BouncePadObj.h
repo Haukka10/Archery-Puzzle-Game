@@ -27,7 +27,7 @@ public:
 	void BounceComponent(AActor* Actor);
 
 private:
-	static UPrimitiveComponent* IsHasPhysics(AActor* Act);
+	static UPrimitiveComponent* IsHasPhysics(const AActor* Act);
 
 	FVector BounceStrength(const FVector& Velocity, const FVector& UpVector) const;
 	

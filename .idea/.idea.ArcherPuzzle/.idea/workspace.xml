@@ -12,16 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Bow/LockArrow/MyLockArrows.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/C/6K/XJVNFN4DJ6XEIKCUQE2JUB.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -113,22 +111,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.ArcherPuzzle.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.ArcherPuzzle.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.ArcherPuzzle">
     <configuration name="ArcherPuzzle" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -272,7 +270,8 @@
       <workItem from="1756725158891" duration="4006000" />
       <workItem from="1756744446402" duration="701000" />
       <workItem from="1756804116650" duration="2196000" />
-      <workItem from="1756896265156" duration="3841000" />
+      <workItem from="1756896265156" duration="4173000" />
+      <workItem from="1757099784585" duration="2479000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -466,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756807578076</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Implementation of lock down a  individual arrows. Clean up code.">
+      <option name="closed" value="true" />
+      <created>1756900260239</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1756900260239</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +507,8 @@
     <MESSAGE value="-" />
     <MESSAGE value="Add consts" />
     <MESSAGE value="Check for material in PhaseArrow.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check for material in PhaseArrow.cpp" />
+    <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of lock down a  individual arrows. Clean up code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

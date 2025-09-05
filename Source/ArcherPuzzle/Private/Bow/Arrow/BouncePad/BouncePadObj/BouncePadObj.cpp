@@ -67,7 +67,7 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 /// Check is actor have a PrimitiveComponent
 /// @param Act 
 /// @return nullptr or primitiveComponent
-UPrimitiveComponent* ABouncePadObj::IsHasPhysics(AActor* Act)
+UPrimitiveComponent* ABouncePadObj::IsHasPhysics(const AActor* Act)
 {
 	if (Act == nullptr)
 		return nullptr;

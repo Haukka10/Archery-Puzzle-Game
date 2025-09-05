@@ -13,13 +13,15 @@ UBridgeArrow::UBridgeArrow(): M_NewRotator(0,0,0)
 	// ...
 }
 
-
+///
+/// Spawn bridge 
+///
 void UBridgeArrow::SpawnBridgeActor() const
 {
-	FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
-	auto br = GetWorld()->SpawnActor<AActor>(BridgeActor);
-	br->SetActorRotation(FRotator(0, 90, 0));
-	br->SetActorLocation(FVector(OwnerTrans.GetTranslation().X + 20, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z));
+	const FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
+	const auto Br = GetWorld()->SpawnActor<AActor>(BridgeActor);
+	Br->SetActorRotation(FRotator(0, 90, 0));
+	Br->SetActorLocation(FVector(OwnerTrans.GetTranslation().X + 20, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z));
 }
 
 // Called when the game starts

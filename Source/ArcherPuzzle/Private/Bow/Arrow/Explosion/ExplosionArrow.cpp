@@ -34,20 +34,23 @@ void UExplosionArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 	// ...
 }
-
+///
+/// Make a sphere for the explosion 
+///
 void UExplosionArrow::CheckSphere() const
 {
-	UWorld* World = GetWorld();
+	const UWorld* World = GetWorld();
 	const FVector Start = GetOwner()->GetActorLocation();
 	const FVector End = GetOwner()->GetActorLocation();
 	TArray<AActor*> ActorToIgnore;
 	ActorToIgnore.Add(GetOwner());
 	TArray<FHitResult> HitResults;
-	
-	bool hit = UKismetSystemLibrary::SphereTraceMulti(World,Start,End,Radius,UEngineTypes::ConvertToTraceType(ECC_Camera),false
+
+	//Sphere trace
+	const bool bHit = UKismetSystemLibrary::SphereTraceMulti(World,Start,End,Radius,UEngineTypes::ConvertToTraceType(ECC_Camera),false
 		,ActorToIgnore,EDrawDebugTrace::ForDuration,HitResults,true,FLinearColor::Black,FLinearColor::Red,5.0F);
 
-	if (hit)
+	if (bHit)
 	{
 		for (const FHitResult& HitRes : HitResults)
 		{
@@ -61,7 +64,8 @@ void UExplosionArrow::CheckSphere() const
 					c->LaunchCharacter({0,0,StrengthOfImpulsePlayer},false,false);
 				}
 			}
-			UPrimitiveComponent* PrimComp = HitRes.GetComponent();
+			//Get a PrimitiveComponent for non-character
+			UPrimitiveComponent* PrimComp = Cast<UPrimitiveComponent>(HitRes.GetActor()->GetRootComponent());
 			AddImpulse(CenterVector,PrimComp);
 		}
 	}
@@ -77,6 +81,7 @@ void UExplosionArrow::AddImpulse(const FVector& Center, UPrimitiveComponent* UPr
 
 float UExplosionArrow::FindDistance(const FVector& OnePoint, const FVector& SecPoint)
 {
+	//Get distance form Point One to Point sec
 	const float Dist = FVector::Dist(OnePoint,SecPoint);
 	UE_LOG(LogTemp, Display, TEXT("Distance is %f"), Dist);
 	return Dist;

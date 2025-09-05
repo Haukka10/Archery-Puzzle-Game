@@ -137,7 +137,9 @@ void AArcherPuzzleCharacter::DoJumpEnd()
 	// pass StopJumping to the character
 	StopJumping();
 }
-
+///
+/// Shooting an arrow 
+///
 void AArcherPuzzleCharacter::Shooting()
 {
 	if (BowComponent == nullptr)
@@ -147,6 +149,8 @@ void AArcherPuzzleCharacter::Shooting()
 	BowComponent->ShootArrow();
 }
 
+/// Change an arrow 
+/// @param Index index of the arrow in the list
 void AArcherPuzzleCharacter::ChangeArrowForBow(const int Index)
 {
 	BowComponent->ChangeArrow(Index);
