@@ -12,14 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Dialog/AudioSystem/BP_AudioDialogSystem.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadObj/BouncePadObj.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +92,8 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Public/SlotBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -271,7 +270,8 @@
       <workItem from="1756744446402" duration="701000" />
       <workItem from="1756804116650" duration="2196000" />
       <workItem from="1756896265156" duration="4173000" />
-      <workItem from="1757099784585" duration="2479000" />
+      <workItem from="1757099784585" duration="3442000" />
+      <workItem from="1757251417220" duration="3016000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -473,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756900260239</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fixes and cleanups. Adding documentation">
+      <option name="closed" value="true" />
+      <created>1757102432201</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1757102432202</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +491,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Change 'IsHasPhysics'" />
     <MESSAGE value="Add Spawn Bounce pad and add basic functions. Add more inputs." />
     <MESSAGE value="Add Bounce effect" />
     <MESSAGE value="Add Bounce to Main Character" />
@@ -508,7 +515,8 @@
     <MESSAGE value="Add consts" />
     <MESSAGE value="Check for material in PhaseArrow.cpp" />
     <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of lock down a  individual arrows. Clean up code." />
+    <MESSAGE value="Fixes and cleanups. Adding documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes and cleanups. Adding documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

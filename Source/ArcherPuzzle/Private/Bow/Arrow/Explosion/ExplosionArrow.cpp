@@ -86,5 +86,3 @@ float UExplosionArrow::FindDistance(const FVector& OnePoint, const FVector& SecP
 	UE_LOG(LogTemp, Display, TEXT("Distance is %f"), Dist);
 	return Dist;
 }
-
-
