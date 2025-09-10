@@ -4,6 +4,7 @@
 #include "Bow/Base/BowComponent.h"
 
 #include "Bow/LockArrows/LockArrows.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values for this component's properties
 UBowComponent::UBowComponent()
@@ -110,6 +111,10 @@ void UBowComponent::ShootArrow() const
 
 	const FActorSpawnParameters SpawnParams;
 	World->SpawnActor<AActor>(M_CurrentArrowShoot,ArrowSpawnTrans, SpawnParams);
+	
+	if (SoundClass != nullptr)
+		UGameplayStatics::PlaySound2D(GetWorld(),SoundClass,1,100,0);
+	
 	IsTimerStart();
 }
 

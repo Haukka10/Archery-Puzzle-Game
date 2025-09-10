@@ -17,14 +17,17 @@ public:
 	// Sets default values for this component's properties
 	UBowComponent();
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|List")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrow|List")
 	TMap<TSubclassOf<AActor>,float> ArrowCooldown; // List of the Actor to spawn arrow when player shooting
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|SpawnTrnas")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrow|SpawnTrnas")
 	FTransform ArrowSpawnTrans;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrows|Lock")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Arrow|Lock")
 	ALockArrows* LockArrows = nullptr;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Arrow|Audio")
+	USoundBase* SoundClass;
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
