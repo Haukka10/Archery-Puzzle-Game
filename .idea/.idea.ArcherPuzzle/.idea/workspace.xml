@@ -13,9 +13,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Bow/Audio/bow-loading-38752.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Bow/Audio/bow-release-bow-and-arrow-4-101936.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Bow/Model/Bow_Anim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Bow/Model/Bow_Anim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://10" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://3" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -287,7 +294,9 @@
       <workItem from="1756896265156" duration="4173000" />
       <workItem from="1757099784585" duration="3442000" />
       <workItem from="1757251417220" duration="4752000" />
-      <workItem from="1757501419552" duration="2829000" />
+      <workItem from="1757501419552" duration="2984000" />
+      <workItem from="1757506842847" duration="546000" />
+      <workItem from="1757597896683" duration="4219000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -505,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757256768855</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add play audio when shooting">
+      <option name="closed" value="true" />
+      <created>1757505965750</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1757505965752</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +532,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Bounce effect" />
     <MESSAGE value="Add Bounce to Main Character" />
     <MESSAGE value="Set limit on Bounce Strength" />
     <MESSAGE value="Fix typo" />
@@ -540,7 +556,8 @@
     <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
     <MESSAGE value="Fixes and cleanups. Adding documentation" />
     <MESSAGE value="Add dialog system code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dialog system code" />
+    <MESSAGE value="Add play audio when shooting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add play audio when shooting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

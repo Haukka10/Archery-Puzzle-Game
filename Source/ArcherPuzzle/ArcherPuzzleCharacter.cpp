@@ -145,6 +145,15 @@ void AArcherPuzzleCharacter::Shooting()
 	if (BowComponent == nullptr)
 		return;
 	
+	FTimerHandle MyTimerHandle;
+	
+	ShootingStartAnim();
+	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &AArcherPuzzleCharacter::StartShooting, 1.4, false);
+	//GetWorld()->GetTimerManager().ClearTimer(MyTimerHandle);
+}
+
+void AArcherPuzzleCharacter::StartShooting() const
+{
 	BowComponent->ArrowSpawnTrans = ShootPoint->GetComponentTransform();
 	BowComponent->ShootArrow();
 }

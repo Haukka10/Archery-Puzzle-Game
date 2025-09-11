@@ -111,6 +111,11 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category="Input")
 	void ChangeArrowForBow(int Index);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void ShootingStartAnim();
+
+	void StartShooting() const;
 	
 protected:
 

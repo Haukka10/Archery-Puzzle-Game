@@ -113,7 +113,9 @@ void UBowComponent::ShootArrow() const
 	World->SpawnActor<AActor>(M_CurrentArrowShoot,ArrowSpawnTrans, SpawnParams);
 	
 	if (SoundClass != nullptr)
+	{
 		UGameplayStatics::PlaySound2D(GetWorld(),SoundClass,1,100,0);
+	}
 	
 	IsTimerStart();
 }
