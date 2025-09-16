@@ -149,7 +149,6 @@ void AArcherPuzzleCharacter::Shooting()
 	
 	ShootingStartAnim();
 	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &AArcherPuzzleCharacter::StartShooting, 1.4, false);
-	//GetWorld()->GetTimerManager().ClearTimer(MyTimerHandle);
 }
 
 void AArcherPuzzleCharacter::StartShooting() const

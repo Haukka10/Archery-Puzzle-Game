@@ -34,8 +34,10 @@ void UTeleportArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 {
+	//Check fot valid pos to teleport
 	if (IsValidPos(TeleLoc))
 	{
+		// Teleport to new pos
 		PlayerToTele->SetActorLocation(TeleLoc);
 	}
 	else
