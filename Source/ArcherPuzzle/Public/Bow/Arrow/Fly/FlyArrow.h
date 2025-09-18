@@ -22,6 +22,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TSubclassOf<AActor> FlyTunnel;
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

@@ -30,6 +30,9 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	AActor* PlayerToTele = nullptr;
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
+
 private:
 	bool IsValidPos(const FVector& TeleLoc) const;
 };

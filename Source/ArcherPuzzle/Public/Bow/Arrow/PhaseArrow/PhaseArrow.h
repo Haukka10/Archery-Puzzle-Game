@@ -32,6 +32,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ResetWall() const;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
 	
 private:
 	

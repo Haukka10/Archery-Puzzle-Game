@@ -36,6 +36,9 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Impulse|Multiplayer")
 	float Multiplayer;
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
+
 private:
 
 	UFUNCTION()

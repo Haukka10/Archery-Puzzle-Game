@@ -29,4 +29,7 @@ public:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	TSubclassOf<AActor> BounceActor;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
 };

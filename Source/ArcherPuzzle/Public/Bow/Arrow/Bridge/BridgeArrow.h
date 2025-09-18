@@ -22,6 +22,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SpawnBridgeActor() const;
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UTexture2D* Texture2D;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
