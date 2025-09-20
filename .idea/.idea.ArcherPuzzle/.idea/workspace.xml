@@ -14,12 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/BouncePad/BouncePadArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Bridge/BridgeArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Bridge/BridgeArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Explosion/ExplosionArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Explosion/ExplosionArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/FlyArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/FlyArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Teleport/TeleportArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Teleport/TeleportArrow.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;C/C++ Project.ArcherPuzzle.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ Project.ArcherPuzzle.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -297,7 +291,8 @@
       <workItem from="1757940925999" duration="971000" />
       <workItem from="1758025629655" duration="848000" />
       <workItem from="1758115719787" duration="1567000" />
-      <workItem from="1758202157797" duration="2341000" />
+      <workItem from="1758202157797" duration="2609000" />
+      <workItem from="1758295036966" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -539,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758026470396</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add to all arrows a Texture 2D">
+      <option name="closed" value="true" />
+      <created>1758204835691</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1758204835691</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +552,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Set limit on Bounce Strength" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Add effect to a arrows" />
     <MESSAGE value="Check for NAN" />
@@ -574,7 +576,8 @@
     <MESSAGE value="Add play audio when shooting" />
     <MESSAGE value="Add code for the anim and audio" />
     <MESSAGE value="Fixes and cleanups. Adding documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes and cleanups. Adding documentation" />
+    <MESSAGE value="Add to all arrows a Texture 2D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add to all arrows a Texture 2D" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
