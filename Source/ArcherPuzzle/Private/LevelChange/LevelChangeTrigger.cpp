@@ -31,7 +31,7 @@ void ALevelChangeTrigger::ChangeLevel() const
 {
 	if (LevelName.IsNone())
 	{
-		UE_LOG(LogTemp,Error,TEXT("Name of the level is empty"));
+		UE_LOG(LogTemp,Error,TEXT("Name of the level is None"));
 		return;
 	}
 	

@@ -14,6 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +84,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/Components/MovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/Components/ProjectileMovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/DebugCameraHUD.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/PhysicsEngine/BodyInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -91,8 +94,10 @@
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/LevelChange/LevelChangeTrigger.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -109,7 +114,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;C/C++ Project.ArcherPuzzle.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ Project.ArcherPuzzle.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -293,6 +298,8 @@
       <workItem from="1758115719787" duration="1567000" />
       <workItem from="1758202157797" duration="2609000" />
       <workItem from="1758295036966" duration="775000" />
+      <workItem from="1758402364873" duration="1738000" />
+      <workItem from="1758809950430" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -542,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758204835691</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Set a code for the level change trigger">
+      <option name="closed" value="true" />
+      <created>1758404089640</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1758404089640</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +567,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fix typo" />
     <MESSAGE value="Add effect to a arrows" />
     <MESSAGE value="Check for NAN" />
     <MESSAGE value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
@@ -577,7 +591,8 @@
     <MESSAGE value="Add code for the anim and audio" />
     <MESSAGE value="Fixes and cleanups. Adding documentation" />
     <MESSAGE value="Add to all arrows a Texture 2D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add to all arrows a Texture 2D" />
+    <MESSAGE value="Set a code for the level change trigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set a code for the level change trigger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

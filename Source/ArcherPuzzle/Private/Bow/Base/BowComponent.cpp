@@ -18,7 +18,7 @@ UBowComponent::UBowComponent()
 
 ///
 /// Check for shooting arrow and length of the list 
-/// @return 
+/// @return True or false if player can shoot the arrow
 bool UBowComponent::CanShoot() const
 {
 	if (M_CurrentArrowShoot == nullptr)
