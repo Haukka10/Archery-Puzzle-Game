@@ -46,7 +46,7 @@ void UExplosionArrow::CheckSphere() const
 	ActorToIgnore.Add(GetOwner());
 	TArray<FHitResult> HitResults;
 
-	//Sphere trace
+	//Spawn a sphere trace for checks
 	const bool bHit = UKismetSystemLibrary::SphereTraceMulti(World,Start,End,Radius,UEngineTypes::ConvertToTraceType(ECC_Camera),false
 		,ActorToIgnore,EDrawDebugTrace::ForDuration,HitResults,true,FLinearColor::Black,FLinearColor::Red,5.0F);
 
@@ -60,7 +60,7 @@ void UExplosionArrow::CheckSphere() const
 				if (c->GetVelocity().Z <= M_MaxVelocity)
 				{
 					float StrengthOfImpulsePlayer = FMath::Clamp(StrengthOfImpulse - 10,0,StrengthOfImpulse);
-					StrengthOfImpulsePlayer -= FindDistance(CenterVector,HitRes.ImpactPoint) * Multiplayer;
+					StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
 					c->LaunchCharacter({0,0,StrengthOfImpulsePlayer},false,false);
 				}
 			}
@@ -77,12 +77,4 @@ void UExplosionArrow::AddImpulse(const FVector& Center, UPrimitiveComponent* UPr
 	{
 		UPrimitive->AddRadialImpulse(Center,Radius,StrengthOfImpulse,ERadialImpulseFalloff::RIF_Linear,true);
 	}
-}
-
-float UExplosionArrow::FindDistance(const FVector& OnePoint, const FVector& SecPoint)
-{
-	//Get distance form Point One to Point sec
-	const float Dist = FVector::Dist(OnePoint,SecPoint);
-	UE_LOG(LogTemp, Display, TEXT("Distance is %f"), Dist);
-	return Dist;
 }

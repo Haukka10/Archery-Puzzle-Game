@@ -37,4 +37,3 @@ void ALevelChangeTrigger::ChangeLevel() const
 	
 	UGameplayStatics::OpenLevel(GetWorld(), LevelName);
 }
-

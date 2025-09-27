@@ -14,8 +14,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Teleport/TeleportArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Teleport/TeleportArrow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Teleport/TeleportArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Teleport/TeleportArrow.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +301,9 @@
       <workItem from="1758202157797" duration="2609000" />
       <workItem from="1758295036966" duration="775000" />
       <workItem from="1758402364873" duration="1738000" />
-      <workItem from="1758809950430" duration="1448000" />
+      <workItem from="1758809950430" duration="1603000" />
+      <workItem from="1758901729525" duration="1071000" />
+      <workItem from="1758983159499" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -557,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758404089640</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="comments">
+      <option name="closed" value="true" />
+      <created>1758812448012</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1758812448012</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +579,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add effect to a arrows" />
     <MESSAGE value="Check for NAN" />
     <MESSAGE value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
     <MESSAGE value="Set up code for PhaseArrow.cpp and PhaseArrow.h" />
@@ -592,7 +603,8 @@
     <MESSAGE value="Fixes and cleanups. Adding documentation" />
     <MESSAGE value="Add to all arrows a Texture 2D" />
     <MESSAGE value="Set a code for the level change trigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set a code for the level change trigger" />
+    <MESSAGE value="comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -54,10 +54,10 @@ bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 	
 	FHitResult HitResult;
 	
-	const FVector Start = {TeleLoc.X+50,TeleLoc.Y+50,TeleLoc.Z+50};
-	const FVector c = {TeleLoc.X, TeleLoc.Y, TeleLoc.Z-250};
+	const FVector Start = {TeleLoc.X+M_Offset,TeleLoc.Y+M_Offset,TeleLoc.Z+M_Offset};
+	const FVector End = {TeleLoc.X, TeleLoc.Y, TeleLoc.Z-M_OffsetEnd};
 	
-	const auto HitBool = GWorld->LineTraceSingleByChannel(HitResult,Start,c,ECollisionChannel::ECC_Visibility);
+	const auto HitBool = GWorld->LineTraceSingleByChannel(HitResult,Start,End,ECollisionChannel::ECC_Visibility);
 	
 	GEngine->AddOnScreenDebugMessage(-1,2.F,FColor::Cyan,FString::Printf(TEXT("Start Line %s"),*Start.ToString()));
 	GEngine->AddOnScreenDebugMessage(-1,2.F,FColor::Cyan,FString::Printf(TEXT("Hit on loc: %s"),*HitResult.Location.ToString()));

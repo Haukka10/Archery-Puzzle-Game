@@ -35,4 +35,9 @@ public:
 
 private:
 	bool IsValidPos(const FVector& TeleLoc) const;
+	
+	UPROPERTY()
+	int M_Offset = 25;
+	UPROPERTY()
+	int M_OffsetEnd = 250;
 };

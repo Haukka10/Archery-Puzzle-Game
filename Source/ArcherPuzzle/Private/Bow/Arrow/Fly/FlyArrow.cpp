@@ -16,7 +16,7 @@ void UFlyArrow::SpawnFlyTunnel(FVector FlyTunnelLoc) const
 {
 	AActor* FlyTun = GetWorld()->SpawnActor<AActor>(FlyTunnel);
 	const float ActorScale = FlyTun->GetSimpleCollisionHalfHeight();
-	FlyTunnelLoc.Z += ActorScale - 100;
+	FlyTunnelLoc.Z += ActorScale;
 	
 	FlyTun->SetActorLocation(FlyTunnelLoc);
 }
