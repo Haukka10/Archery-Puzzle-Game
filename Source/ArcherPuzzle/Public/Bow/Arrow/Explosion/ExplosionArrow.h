@@ -44,9 +44,6 @@ private:
 	UFUNCTION()
 	void AddImpulse(const FVector& Center, UPrimitiveComponent* UPrimitive) const;
 
-	UFUNCTION()
-	static float FindDistance(const FVector& OnePoint, const FVector& SecPoint);
-
 	UPROPERTY()
 	double M_MaxVelocity = 350;
 
