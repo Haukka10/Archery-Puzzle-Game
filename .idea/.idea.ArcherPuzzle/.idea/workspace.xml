@@ -14,7 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Explosion/ExplosionArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Explosion/ExplosionArrow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +302,9 @@
       <workItem from="1758809950430" duration="1603000" />
       <workItem from="1758901729525" duration="1071000" />
       <workItem from="1758983159499" duration="2070000" />
-      <workItem from="1759070160883" duration="1855000" />
+      <workItem from="1759070160883" duration="1887000" />
+      <workItem from="1759080577947" duration="606000" />
+      <workItem from="1759162973758" duration="983000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -576,7 +578,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758984857954</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Delete Finddis for .h file">
+      <option name="closed" value="true" />
+      <created>1759072041902</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1759072041902</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +596,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add ForwardVector to Arrow check in BouncePadObj.cpp" />
     <MESSAGE value="Set up code for PhaseArrow.cpp and PhaseArrow.h" />
     <MESSAGE value="Make a working code for PhaseArrow.h and PhaseArrow.cpp" />
     <MESSAGE value="Add const to ResetWall" />
@@ -611,7 +620,8 @@
     <MESSAGE value="Set a code for the level change trigger" />
     <MESSAGE value="comments" />
     <MESSAGE value="Change in code: Fixs bugs, revmoe magic valuse, comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change in code: Fixs bugs, revmoe magic valuse, comments" />
+    <MESSAGE value="Delete Finddis for .h file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Finddis for .h file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

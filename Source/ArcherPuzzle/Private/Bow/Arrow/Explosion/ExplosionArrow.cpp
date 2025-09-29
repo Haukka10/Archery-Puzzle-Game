@@ -71,6 +71,9 @@ void UExplosionArrow::CheckSphere() const
 	}
 }
 
+/// Add Radial impulse to obj with physics
+/// @param Center - Center of the vector
+/// @param UPrimitive - PrimitiveComponent form actor
 void UExplosionArrow::AddImpulse(const FVector& Center, UPrimitiveComponent* UPrimitive) const
 {
 	if (UPrimitive && UPrimitive->IsSimulatingPhysics())
