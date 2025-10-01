@@ -50,10 +50,10 @@ void UPhaseArrow::AddWall(AActor* Actor)
 		}
 	}
 
-	PrimComp = Actor->FindComponentByClass<UPrimitiveComponent>();
-	if (PrimComp)
+	M_PrimComp = Actor->FindComponentByClass<UPrimitiveComponent>();
+	if (M_PrimComp)
 	{
-		M_WallCollision = PrimComp->GetCollisionEnabled();
+		M_WallCollision = M_PrimComp->GetCollisionEnabled();
 	}
 	ChangeProperty();
 }
@@ -65,7 +65,7 @@ void UPhaseArrow::ResetWall() const
 	//Set an old material
 	c->SetMaterial(0,M_PreWallMaterial);
 	//Set an old Wall collision
-	PrimComp->SetCollisionEnabled(M_WallCollision);
+	M_PrimComp->SetCollisionEnabled(M_WallCollision);
 }
 
 void UPhaseArrow::ChangeProperty() const
@@ -79,5 +79,5 @@ void UPhaseArrow::ChangeProperty() const
 	Mat->SetMaterial(0 ,WallMaterial);
 	
 	//Set new Collision to NoCollision 
-	PrimComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	M_PrimComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }

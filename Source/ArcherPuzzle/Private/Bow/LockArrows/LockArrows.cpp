@@ -31,5 +31,5 @@ void ALockArrows::Tick(float DeltaTime)
 /// @return true/false
 bool ALockArrows::IsLockArrow(const TSubclassOf<AActor>& Arrow) const
 {
-	return ArrowsList.Contains(Arrow);
+	return M_ArrowsList.Contains(Arrow);
 }

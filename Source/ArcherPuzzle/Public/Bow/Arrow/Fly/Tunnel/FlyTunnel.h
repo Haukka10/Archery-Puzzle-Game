@@ -35,5 +35,5 @@ public:
 private:
 	
 	UPROPERTY()
-	float OldVelocity;
+	float M_OldVelocity;
 };

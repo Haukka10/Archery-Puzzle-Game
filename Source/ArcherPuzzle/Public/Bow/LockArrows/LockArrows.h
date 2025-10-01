@@ -24,7 +24,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere,Category = "LockArrows")
-	TArray<TSubclassOf<AActor>> ArrowsList;
+	TArray<TSubclassOf<AActor>> M_ArrowsList;
 	
 	UFUNCTION()
 	bool IsLockArrow(const TSubclassOf<AActor>& Arrow) const;

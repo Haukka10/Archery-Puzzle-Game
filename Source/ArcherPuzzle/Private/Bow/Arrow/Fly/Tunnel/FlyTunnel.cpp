@@ -45,7 +45,7 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 	if (Arrow != nullptr)
 	{
 		//Arrow->ProjectileGravityScale = 0.001;
-		OldVelocity = Arrow->MaxSpeed;
+		M_OldVelocity = Arrow->MaxSpeed;
 		Arrow->MaxSpeed += BoostObj;
 		
 		//Boost velocity in the current direction

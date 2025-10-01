@@ -23,7 +23,7 @@ bool UBowComponent::CanShoot() const
 {
 	if (M_CurrentArrowShoot == nullptr)
 		return false;
-	if (M_ArrowActors.Num() == 0)
+	if (M_ArrowActors.IsEmpty())
 		return false;
 	
 	return true;

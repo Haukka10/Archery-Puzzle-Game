@@ -50,5 +50,5 @@ private:
 	ECollisionEnabled::Type	M_WallCollision = ECollisionEnabled::Type::QueryAndPhysics;
 	
 	UPROPERTY()
-	UPrimitiveComponent* PrimComp = nullptr;
+	UPrimitiveComponent* M_PrimComp = nullptr;
 };
