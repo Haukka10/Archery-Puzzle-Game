@@ -46,6 +46,10 @@ void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 	}
 }
 
+///
+/// check for valid location
+/// @param TeleLoc - Location for change a pos
+/// @return true/false - true when Location is valid, otherwise false
 bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 {
 	GWorld = GetWorld();

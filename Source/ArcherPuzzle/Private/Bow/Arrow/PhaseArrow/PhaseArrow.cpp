@@ -49,12 +49,12 @@ void UPhaseArrow::AddWall(AActor* Actor)
 			M_PreWallMaterial = Mat;
 		}
 	}
-
+	
 	M_PrimComp = Actor->FindComponentByClass<UPrimitiveComponent>();
+	
 	if (M_PrimComp)
-	{
 		M_WallCollision = M_PrimComp->GetCollisionEnabled();
-	}
+	
 	ChangeProperty();
 }
 
@@ -67,7 +67,9 @@ void UPhaseArrow::ResetWall() const
 	//Set an old Wall collision
 	M_PrimComp->SetCollisionEnabled(M_WallCollision);
 }
-
+///
+/// Change a prop for wall (has collision or not)
+///
 void UPhaseArrow::ChangeProperty() const
 {
 	//Set new material

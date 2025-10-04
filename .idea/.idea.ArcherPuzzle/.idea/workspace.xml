@@ -14,13 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/Tunnel/FlyTunnel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/Tunnel/FlyTunnel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Teleport/TeleportArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Teleport/TeleportArrow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +306,8 @@
       <workItem from="1759070160883" duration="1887000" />
       <workItem from="1759080577947" duration="606000" />
       <workItem from="1759162973758" duration="1009000" />
-      <workItem from="1759331326849" duration="831000" />
+      <workItem from="1759331326849" duration="1049000" />
+      <workItem from="1759589286208" duration="3638000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -601,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759164094009</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Cleanup and fix formating">
+      <option name="closed" value="true" />
+      <created>1759332355757</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1759332355757</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +615,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Make a working code for PhaseArrow.h and PhaseArrow.cpp" />
     <MESSAGE value="Add const to ResetWall" />
     <MESSAGE value="Add level 1" />
     <MESSAGE value="Add Level2" />
@@ -636,7 +639,8 @@
     <MESSAGE value="Change in code: Fixs bugs, revmoe magic valuse, comments" />
     <MESSAGE value="Delete Finddis for .h file" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Cleanup and fix formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
