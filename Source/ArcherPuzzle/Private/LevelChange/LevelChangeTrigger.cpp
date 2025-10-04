@@ -26,10 +26,12 @@ void ALevelChangeTrigger::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
+///
+/// Change a level and change a levelName if not a emp
+///
 void ALevelChangeTrigger::ChangeLevel() const
 {
-	if (LevelName.IsNone())
+	if (LevelName == NAME_None || LevelName.IsNone())
 	{
 		UE_LOG(LogTemp,Error,TEXT("Name of the level is None"));
 		return;

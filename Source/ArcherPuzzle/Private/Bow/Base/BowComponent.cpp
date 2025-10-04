@@ -83,7 +83,9 @@ void UBowComponent::IsTimerStart() const
 	
 	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &UBowComponent::IsTimerDone, *Time, false);
 }
-
+///
+/// Setting an M_IsCanShoot to true and clear timer
+///
 void UBowComponent::IsTimerDone() const
 {
 	GetWorld()->GetTimerManager().ClearTimer(MyTimerHandle);
@@ -111,7 +113,7 @@ void UBowComponent::ShootArrow() const
 
 	const FActorSpawnParameters SpawnParams;
 	World->SpawnActor<AActor>(M_CurrentArrowShoot,ArrowSpawnTrans, SpawnParams);
-	
+	// Check for a sound class is not a nullptr, if not setting a volume, pitch nad start time 
 	if (SoundClass != nullptr)
 	{
 		UGameplayStatics::PlaySound2D(GetWorld(),SoundClass,1,100,0);
