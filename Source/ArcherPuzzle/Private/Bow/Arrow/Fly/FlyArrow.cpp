@@ -14,6 +14,9 @@ UFlyArrow::UFlyArrow()
 
 void UFlyArrow::SpawnFlyTunnel(FVector FlyTunnelLoc) const
 {
+	if (FlyTunnel == nullptr)
+		return;
+	
 	AActor* FlyTun = GetWorld()->SpawnActor<AActor>(FlyTunnel);
 	const float ActorScale = FlyTun->GetSimpleCollisionHalfHeight();
 	FlyTunnelLoc.Z += ActorScale;
@@ -30,7 +33,6 @@ void UFlyArrow::BeginPlay()
 	if (FlyTunnel == nullptr)
 	{
 		UE_LOG(LogTemp, Error, TEXT("FlyTunnel is null"));
-		return;
 	}
 	
 }

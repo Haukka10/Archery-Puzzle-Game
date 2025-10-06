@@ -39,11 +39,14 @@ void UExplosionArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 ///
 void UExplosionArrow::CheckSphere() const
 {
+	//Setup things
 	const UWorld* World = GetWorld();
-	const FVector Start = GetOwner()->GetActorLocation();
-	const FVector End = GetOwner()->GetActorLocation();
+	const AActor* Owner = GetOwner();
+	const FVector Start = Owner->GetActorLocation();
+	const FVector End = Owner->GetActorLocation();
 	TArray<AActor*> ActorToIgnore;
 	ActorToIgnore.Add(GetOwner());
+	
 	TArray<FHitResult> HitResults;
 
 	//Spawn a sphere trace for checks

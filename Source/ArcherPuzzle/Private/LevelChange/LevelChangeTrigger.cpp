@@ -36,6 +36,10 @@ void ALevelChangeTrigger::ChangeLevel() const
 		UE_LOG(LogTemp,Error,TEXT("Name of the level is None"));
 		return;
 	}
+	const UWorld* World = GetWorld();
 	
-	UGameplayStatics::OpenLevel(GetWorld(), LevelName);
+	if (World == nullptr)
+		return;
+	
+	UGameplayStatics::OpenLevel(World, LevelName);
 }
