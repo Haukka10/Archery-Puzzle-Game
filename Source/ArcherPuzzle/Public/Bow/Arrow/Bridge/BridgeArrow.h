@@ -20,7 +20,7 @@ public:
 	TSubclassOf<AActor> BridgeActor;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
-	double OffSet;
+	double OffSet = 20;
 
 	UFUNCTION(BlueprintCallable)
 	void SpawnBridgeActor() const;
