@@ -67,7 +67,7 @@ void AArcherPuzzleCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 		EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Completed, this, &AArcherPuzzleCharacter::Shooting);
 		
-		//Slots
+		//Slots in hot bar
 		EnhancedInputComponent->BindAction(OneSlotAction, ETriggerEvent::Triggered, this, &AArcherPuzzleCharacter::ChangeArrowForBow,0);
 		EnhancedInputComponent->BindAction(TwoSlotAction, ETriggerEvent::Triggered, this, &AArcherPuzzleCharacter::ChangeArrowForBow,1);
 		EnhancedInputComponent->BindAction(TreeSlotAction, ETriggerEvent::Triggered, this, &AArcherPuzzleCharacter::ChangeArrowForBow,2);

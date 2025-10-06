@@ -19,6 +19,9 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	TSubclassOf<AActor> BridgeActor;
 	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	double OffSet;
+
 	UFUNCTION(BlueprintCallable)
 	void SpawnBridgeActor() const;
 
