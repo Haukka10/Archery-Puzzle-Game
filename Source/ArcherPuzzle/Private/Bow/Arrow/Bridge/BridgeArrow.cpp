@@ -14,7 +14,7 @@ UBridgeArrow::UBridgeArrow(): M_NewRotator(0,0,0)
 }
 
 ///
-/// Spawn bridge 
+/// Spawn bridge at 'OwnerTrans' with offset
 ///
 void UBridgeArrow::SpawnBridgeActor() const
 {

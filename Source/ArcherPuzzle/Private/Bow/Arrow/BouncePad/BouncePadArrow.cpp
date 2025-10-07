@@ -3,7 +3,6 @@
 
 #include "Bow/Arrow/BouncePad/BouncePadArrow.h"
 
-// WORK IN PROGRESS
 // Sets default values for this component's properties
 UBouncePadArrow::UBouncePadArrow()
 {

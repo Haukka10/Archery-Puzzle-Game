@@ -14,7 +14,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/ArcherPuzzleCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/BouncePad/BouncePadArrow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Bridge/BridgeArrow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Base/BowComponent.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -308,7 +311,8 @@
       <workItem from="1759162973758" duration="1009000" />
       <workItem from="1759331326849" duration="1049000" />
       <workItem from="1759589286208" duration="4131000" />
-      <workItem from="1759761167349" duration="1445000" />
+      <workItem from="1759761167349" duration="1975000" />
+      <workItem from="1759858452009" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -630,7 +634,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759761892885</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Cleanup">
+      <option name="closed" value="true" />
+      <created>1759762928050</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1759762928050</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Set OffSet to 20">
+      <option name="closed" value="true" />
+      <created>1759762989997</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1759762989997</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,8 +660,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Make a 1 and 2 levels" />
-    <MESSAGE value="Add level 3" />
     <MESSAGE value="Add cooldown for the arrows" />
     <MESSAGE value="Adding documentation" />
     <MESSAGE value="Adding documentation to PhaseArrow.cpp" />
@@ -665,7 +683,9 @@
     <MESSAGE value="Add Comments" />
     <MESSAGE value="Add comments and check for a level name if not a NAME_None or None" />
     <MESSAGE value="Add Comments and Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comments and Cleanup" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Set OffSet to 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set OffSet to 20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

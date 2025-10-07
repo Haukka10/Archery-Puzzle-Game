@@ -76,12 +76,12 @@ FTimerHandle MyTimerHandle;
 void UBowComponent::IsTimerStart() const
 {
 	M_IsCanShoot = false;
-	auto Time = ArrowCooldown.Find(M_CurrentArrowShoot);
+	const auto CooldownTime = ArrowCooldown.Find(M_CurrentArrowShoot);
 	
-	if (Time == nullptr)
+	if (CooldownTime == nullptr)
 		return;
 	
-	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &UBowComponent::IsTimerDone, *Time, false);
+	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &UBowComponent::IsTimerDone, *CooldownTime, false);
 }
 ///
 /// Setting an M_IsCanShoot to true and clear timer
@@ -96,7 +96,6 @@ void UBowComponent::IsTimerDone() const
 ///
 void UBowComponent::ShootArrow() const
 {
-	
 	if (!M_IsCanShoot)
 		return;
 	
