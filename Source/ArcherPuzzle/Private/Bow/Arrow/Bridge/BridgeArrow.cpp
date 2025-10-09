@@ -20,7 +20,7 @@ void UBridgeArrow::SpawnBridgeActor() const
 {
 	const FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
 	const auto Br = GetWorld()->SpawnActor<AActor>(BridgeActor);
-	Br->SetActorRotation(FRotator(0, 90, 0));
+	Br->SetActorRotation(ActorRotation);
 	Br->SetActorLocation(FVector(OwnerTrans.GetTranslation().X + OffSet, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z));
 }
 

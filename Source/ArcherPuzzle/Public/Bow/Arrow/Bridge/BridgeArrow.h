@@ -18,6 +18,9 @@ public:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	TSubclassOf<AActor> BridgeActor;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FRotator ActorRotation = {0,90,0};
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	double OffSet = 20;

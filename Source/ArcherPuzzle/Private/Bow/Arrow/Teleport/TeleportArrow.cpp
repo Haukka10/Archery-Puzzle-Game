@@ -35,15 +35,11 @@ void UTeleportArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 {
 	//Check fot valid pos to teleport
-	if (IsValidPos(TeleLoc))
-	{
-		// Teleport to new pos
-		PlayerToTele->SetActorLocation(TeleLoc);
-	}
-	else
-	{
+	if (!IsValidPos(TeleLoc))
 		GEngine->AddOnScreenDebugMessage(-1,2.F,FColor::Cyan,FString::Printf(TEXT("Not Teleporting (not valid pos)")));
-	}
+
+	// Teleport to new pos
+	PlayerToTele->SetActorLocation(TeleLoc);
 }
 
 ///
@@ -58,8 +54,8 @@ bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 	
 	FHitResult HitResult;
 	
-	const FVector Start = {TeleLoc.X+M_Offset,TeleLoc.Y+M_Offset,TeleLoc.Z+M_Offset};
-	const FVector End = {TeleLoc.X, TeleLoc.Y, TeleLoc.Z-M_OffsetEnd};
+	const FVector Start = {TeleLoc.X + M_Offset,TeleLoc.Y + M_Offset,TeleLoc.Z + M_Offset};
+	const FVector End = {TeleLoc.X, TeleLoc.Y, TeleLoc.Z - M_OffsetEnd};
 	
 	const auto HitBool = GWorld->LineTraceSingleByChannel(HitResult,Start,End,ECollisionChannel::ECC_Visibility);
 	
