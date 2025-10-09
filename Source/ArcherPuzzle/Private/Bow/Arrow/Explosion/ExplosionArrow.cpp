@@ -48,10 +48,12 @@ void UExplosionArrow::CheckSphere() const
 	ActorToIgnore.Add(GetOwner());
 	
 	TArray<FHitResult> HitResults;
-
+	if (World == nullptr)
+		return;
+	
 	//Spawn a sphere trace for checks
 	const bool bHit = UKismetSystemLibrary::SphereTraceMulti(World,Start,End,Radius,UEngineTypes::ConvertToTraceType(ECC_Camera),false
-		,ActorToIgnore,EDrawDebugTrace::ForDuration,HitResults,true,FLinearColor::Black,FLinearColor::Red,5.0F);
+		,ActorToIgnore,EDrawDebugTrace::ForDuration,HitResults,true);
 
 	if (bHit)
 	{
@@ -62,7 +64,8 @@ void UExplosionArrow::CheckSphere() const
 			{
 				if (c->GetVelocity().Z <= M_MaxVelocity)
 				{
-					float StrengthOfImpulsePlayer = FMath::Clamp(StrengthOfImpulse - 10,0,StrengthOfImpulse);
+					const float MinStrengthOfImpulse = StrengthOfImpulse - 10;
+					float StrengthOfImpulsePlayer = FMath::Clamp(MinStrengthOfImpulse,0,StrengthOfImpulse);
 					StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
 					c->LaunchCharacter({0,0,StrengthOfImpulsePlayer},false,false);
 				}
