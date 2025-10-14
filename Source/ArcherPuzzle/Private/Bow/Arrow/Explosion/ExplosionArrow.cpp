@@ -62,11 +62,15 @@ void UExplosionArrow::CheckSphere() const
 			FVector CenterVector = GetOwner()->GetActorLocation();
 			if (const auto c = Cast<AArcherPuzzleCharacter>(HitRes.GetActor()))
 			{
+				//check for a velocity is less them max velocity
 				if (c->GetVelocity().Z <= M_MaxVelocity)
 				{
 					const float MinStrengthOfImpulse = StrengthOfImpulse - 10;
 					float StrengthOfImpulsePlayer = FMath::Clamp(MinStrengthOfImpulse,0,StrengthOfImpulse);
-					StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
+					
+					if (StrengthOfImpulse > 0)
+						StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
+					
 					c->LaunchCharacter({0,0,StrengthOfImpulsePlayer},false,false);
 				}
 			}
