@@ -52,10 +52,10 @@ bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 	if (GWorld == nullptr)
 		return false;
 	
-	FHitResult HitResult;
-	
 	const FVector Start = {TeleLoc.X + M_Offset,TeleLoc.Y + M_Offset,TeleLoc.Z + M_Offset};
 	const FVector End = {TeleLoc.X, TeleLoc.Y, TeleLoc.Z - M_OffsetEnd};
+	
+	FHitResult HitResult;
 	
 	const auto HitBool = GWorld->LineTraceSingleByChannel(HitResult,Start,End,ECollisionChannel::ECC_Visibility);
 	

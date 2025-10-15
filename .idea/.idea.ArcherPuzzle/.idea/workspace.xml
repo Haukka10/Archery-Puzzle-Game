@@ -14,8 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ArcherPuzzle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/SceneComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/HitResult.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
@@ -313,7 +312,7 @@
       <workItem from="1759761167349" duration="1975000" />
       <workItem from="1759858452009" duration="943000" />
       <workItem from="1760038144333" duration="1344000" />
-      <workItem from="1760475953800" duration="1275000" />
+      <workItem from="1760475953800" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="Change 'IsHasPhysics'">
       <option name="closed" value="true" />
@@ -675,7 +674,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760039481972</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Fixs">
+      <option name="closed" value="true" />
+      <created>1760477520611</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1760477520611</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +692,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Adding documentation" />
     <MESSAGE value="Adding documentation to PhaseArrow.cpp" />
     <MESSAGE value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
     <MESSAGE value="Fixes and cleanups" />
@@ -710,7 +716,8 @@
     <MESSAGE value="Set OffSet to 20" />
     <MESSAGE value="fixs" />
     <MESSAGE value="Cleanup and fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
+    <MESSAGE value="Fixs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

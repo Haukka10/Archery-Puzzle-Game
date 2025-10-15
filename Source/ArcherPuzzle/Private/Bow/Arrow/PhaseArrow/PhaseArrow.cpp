@@ -39,6 +39,7 @@ void UPhaseArrow::AddWall(AActor* Actor)
 	//Get all UStaticMeshComponent for the actor
 	TArray<UStaticMeshComponent*> Comps;
 	Actor->GetComponents<UStaticMeshComponent>(Comps);
+	
 	if (Comps.Num() > 0)
 	{
 		const UStaticMeshComponent* FoundComp = Comps[0];
@@ -49,7 +50,7 @@ void UPhaseArrow::AddWall(AActor* Actor)
 		}
 	}
 	
-	M_PrimComp = Actor->FindComponentByClass<UPrimitiveComponent>();
+	M_PrimComp = Actor->GetComponentByClass<UPrimitiveComponent>();
 	
 	if (M_PrimComp)
 		M_WallCollision = M_PrimComp->GetCollisionEnabled();
