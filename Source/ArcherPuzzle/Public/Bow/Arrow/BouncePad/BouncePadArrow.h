@@ -32,4 +32,7 @@ public:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	UTexture2D* Texture2D;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FRotator PadRotator = {0, 90, 0};
 };

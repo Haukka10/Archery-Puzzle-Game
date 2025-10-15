@@ -59,7 +59,7 @@ void UExplosionArrow::CheckSphere() const
 	{
 		for (const FHitResult& HitRes : HitResults)
 		{
-			FVector CenterVector = GetOwner()->GetActorLocation();
+			FVector CenterVector = Owner->GetActorLocation();
 			if (const auto c = Cast<AArcherPuzzleCharacter>(HitRes.GetActor()))
 			{
 				//check for a velocity is less them max velocity
