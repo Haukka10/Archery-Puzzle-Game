@@ -32,6 +32,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float BoostObj;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector LaunchVelocity = {0,0,150};
+
 private:
 	
 	UPROPERTY()

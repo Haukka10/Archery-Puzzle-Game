@@ -36,15 +36,14 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 	if (Character != nullptr)
 	{
 		Character->GetCharacterMovement()->GravityScale = 0.01;
-		Character->LaunchCharacter(FVector(0,0,150),false,false);
-		//TODO: Add UI to show movement lock.
+		Character->LaunchCharacter(LaunchVelocity,false,false);
+
 		Character->bMovementLock = true;
 		return;
 	}
 	const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>();
 	if (Arrow != nullptr)
 	{
-		//Arrow->ProjectileGravityScale = 0.001;
 		M_OldVelocity = Arrow->MaxSpeed;
 		Arrow->MaxSpeed += BoostObj;
 		
@@ -57,10 +56,10 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 		return;
 	}
 	const auto Psy = Cast<UPrimitiveComponent>(Actor);
-	if (Psy != nullptr)
-	{
-		Psy->SetEnableGravity(false);
-	}
+	if (Psy == nullptr)
+		return;
+	
+	Psy->SetEnableGravity(false);
 	
 }
 
