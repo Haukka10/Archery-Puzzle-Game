@@ -56,6 +56,7 @@ bool UBowComponent::CanChangeArrow(const TSubclassOf<AActor>& SelArrow)
 void UBowComponent::ChangeArrow(const int Index)
 {
 	const TSubclassOf<AActor> CurrentArrowShootBuffer  = M_ArrowActors[Index];
+	//Check for lock arrow
 	if (!LockArrows->IsLockArrow(CurrentArrowShootBuffer))
 	{
 		M_IndexOfArrow = Index;
@@ -96,6 +97,9 @@ void UBowComponent::IsTimerDone() const
 ///
 void UBowComponent::ShootArrow() const
 {
+	if (SoundClass == nullptr)
+		return;
+	
 	if (!M_IsCanShoot)
 		return;
 	
@@ -112,11 +116,8 @@ void UBowComponent::ShootArrow() const
 
 	const FActorSpawnParameters SpawnParams;
 	World->SpawnActor<AActor>(M_CurrentArrowShoot,ArrowSpawnTrans, SpawnParams);
-	// Check for a sound class is not a nullptr, if not setting a volume, pitch nad start time 
-	if (SoundClass != nullptr)
-	{
-		UGameplayStatics::PlaySound2D(GetWorld(),SoundClass,1,100,0);
-	}
+	// Check for a sound class is not a nullptr, if not setting a volume, pitch and start time 
+	UGameplayStatics::PlaySound2D(GetWorld(),SoundClass,1,100,0);
 	
 	IsTimerStart();
 }
