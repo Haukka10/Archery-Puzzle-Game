@@ -48,7 +48,7 @@ void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 /// @return true/false - true when Location is valid, otherwise false
 bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 {
-	const auto GWorld = GetWorld();
+	GWorld = GetWorld();
 	if (GWorld == nullptr)
 		return false;
 	

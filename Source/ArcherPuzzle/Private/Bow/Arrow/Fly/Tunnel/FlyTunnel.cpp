@@ -49,13 +49,14 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 		
 		//Boost velocity in the current direction
 		const FVector Direction = Arrow->Velocity.GetSafeNormal();
-		const FVector BoostedVelocity = Arrow->Velocity + Direction * BoostObj;
-		Arrow->Velocity = BoostedVelocity;
+		Arrow->Velocity = Arrow->Velocity + Direction * BoostObj;
 		
 		Arrow->UpdateComponentVelocity();
 		return;
 	}
+	
 	const auto Psy = Cast<UPrimitiveComponent>(Actor);
+	
 	if (Psy == nullptr)
 		return;
 	
