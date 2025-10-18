@@ -17,6 +17,9 @@ void UFlyArrow::SpawnFlyTunnel(FVector FlyTunnelLoc) const
 	if (FlyTunnel == nullptr)
 		return;
 	
+	if (FlyTunnelLoc.IsZero() == true)
+		return;
+	
 	AActor* FlyTun = GetWorld()->SpawnActor<AActor>(FlyTunnel);
 	
 	if (FlyTun == nullptr)
