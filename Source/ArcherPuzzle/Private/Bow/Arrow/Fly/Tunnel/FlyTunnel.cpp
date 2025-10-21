@@ -35,23 +35,13 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 	const auto Character = Cast<AArcherPuzzleCharacter>(Actor);
 	if (Character != nullptr)
 	{
-		Character->GetCharacterMovement()->GravityScale = 0.01;
-		Character->LaunchCharacter(LaunchVelocity,false,false);
-
-		Character->bMovementLock = true;
+		FlyTunnelEffectCharacter(Character);
 		return;
 	}
 	const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>();
 	if (Arrow != nullptr)
 	{
-		M_OldVelocity = Arrow->MaxSpeed;
-		Arrow->MaxSpeed += BoostObj;
-		
-		//Boost velocity in the current direction
-		const FVector Direction = Arrow->Velocity.GetSafeNormal();
-		Arrow->Velocity = Arrow->Velocity + Direction * BoostObj;
-		
-		Arrow->UpdateComponentVelocity();
+		FlyTunnelEffectProjectile(Arrow);
 		return;
 	}
 	
@@ -78,4 +68,24 @@ void AFlyTunnel::FlyTunnelEndEffect(AActor* Actor)
 	{
 		Psy->SetEnableGravity(true);
 	}
+}
+
+void AFlyTunnel::FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character)
+{
+	Character->GetCharacterMovement()->GravityScale = 0.01;
+	Character->LaunchCharacter(LaunchVelocity,false,false);
+
+	Character->bMovementLock = true;
+}
+
+void AFlyTunnel::FlyTunnelEffectProjectile(UProjectileMovementComponent* Projectile)
+{
+	M_OldVelocity = Projectile->MaxSpeed;
+	Projectile->MaxSpeed += BoostObj;
+		
+	//Boost velocity in the current direction
+	const FVector Direction = Projectile->Velocity.GetSafeNormal();
+	Projectile->Velocity = Projectile->Velocity + Direction * BoostObj;
+		
+	Projectile->UpdateComponentVelocity();
 }

@@ -39,4 +39,9 @@ private:
 	
 	UPROPERTY()
 	float M_OldVelocity;
+
+	UFUNCTION()
+	void FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character);
+	void FlyTunnelEffectProjectile(UProjectileMovementComponent* Projectile);
+	
 };
