@@ -70,7 +70,7 @@ void AFlyTunnel::FlyTunnelEndEffect(AActor* Actor)
 	}
 }
 
-void AFlyTunnel::FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character)
+void AFlyTunnel::FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character) const
 {
 	Character->GetCharacterMovement()->GravityScale = 0.01;
 	Character->LaunchCharacter(LaunchVelocity,false,false);

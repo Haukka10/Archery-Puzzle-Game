@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "FlyTunnel.generated.h"
 
+class UProjectileMovementComponent;
+
 UCLASS()
 class ARCHERPUZZLE_API AFlyTunnel : public AActor
 {
@@ -41,7 +43,7 @@ private:
 	float M_OldVelocity;
 
 	UFUNCTION()
-	void FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character);
+	void FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character) const;
 	void FlyTunnelEffectProjectile(UProjectileMovementComponent* Projectile);
 	
 };

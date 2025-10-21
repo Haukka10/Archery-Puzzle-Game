@@ -12,9 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -316,15 +314,7 @@
       <workItem from="1760544569907" duration="480000" />
       <workItem from="1760646232137" duration="665000" />
       <workItem from="1760822316879" duration="1020000" />
-      <workItem from="1761062156305" duration="1390000" />
-    </task>
-    <task id="LOCAL-00005" summary="Set limit on Bounce Strength">
-      <option name="closed" value="true" />
-      <created>1755440614369</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1755440614369</updated>
+      <workItem from="1761062156305" duration="1691000" />
     </task>
     <task id="LOCAL-00006" summary="Fix typo">
       <option name="closed" value="true" />
@@ -710,7 +700,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761063108490</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Cleanup and fix formating">
+      <option name="closed" value="true" />
+      <created>1761063835303</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1761063835305</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
