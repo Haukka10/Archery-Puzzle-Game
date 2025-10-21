@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +39,6 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -313,15 +314,8 @@
       <workItem from="1760475953800" duration="1585000" />
       <workItem from="1760544569907" duration="480000" />
       <workItem from="1760646232137" duration="665000" />
-      <workItem from="1760822316879" duration="924000" />
-    </task>
-    <task id="LOCAL-00003" summary="Add Bounce effect">
-      <option name="closed" value="true" />
-      <created>1755354184650</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1755354184650</updated>
+      <workItem from="1760822316879" duration="1020000" />
+      <workItem from="1761062156305" duration="701000" />
     </task>
     <task id="LOCAL-00004" summary="Add Bounce to Main Character">
       <option name="closed" value="true" />
@@ -707,7 +701,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760823237800</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add check for vector is zero">
+      <option name="closed" value="true" />
+      <created>1760823318653</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1760823318653</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,7 +719,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Adding documentation to PhaseArrow.cpp" />
     <MESSAGE value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
     <MESSAGE value="Fixes and cleanups" />
     <MESSAGE value="-" />
@@ -742,7 +743,8 @@
     <MESSAGE value="fixs" />
     <MESSAGE value="Fixs" />
     <MESSAGE value="Cleanup and fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
+    <MESSAGE value="Add check for vector is zero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add check for vector is zero" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

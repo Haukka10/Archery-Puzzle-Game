@@ -41,5 +41,5 @@ void UBouncePadArrow::SpawnBouncePadObj(const FVector SpawnVector) const
 		return;
 	
 	const FActorSpawnParameters SpawnInfo;
-	World->SpawnActor<AActor>(BounceActor,SpawnVector,PadRotator, SpawnInfo);
+	World->SpawnActor<AActor>(BounceActor, SpawnVector, PadRotator, SpawnInfo);
 }
