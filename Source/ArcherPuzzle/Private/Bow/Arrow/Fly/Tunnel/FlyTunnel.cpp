@@ -82,10 +82,12 @@ void AFlyTunnel::FlyTunnelEffectProjectile(UProjectileMovementComponent* Project
 {
 	M_OldVelocity = Projectile->MaxSpeed;
 	Projectile->MaxSpeed += BoostObj;
-		
+	
+	const FVector ProjectileVelocity = Projectile->Velocity;
+	
 	//Boost velocity in the current direction
-	const FVector Direction = Projectile->Velocity.GetSafeNormal();
-	Projectile->Velocity = Projectile->Velocity + Direction * BoostObj;
+	const FVector Direction = ProjectileVelocity.GetSafeNormal();
+	Projectile->Velocity = ProjectileVelocity + Direction * BoostObj;
 		
 	Projectile->UpdateComponentVelocity();
 }

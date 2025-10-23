@@ -37,7 +37,6 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -90,11 +89,14 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/GeometryCore/Private/Operations/EmbedSurfacePath.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Private/SlotBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Public/SlotBase.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/Tunnel/FlyTunnel.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/LevelChange/LevelChangeTrigger.h" root0="FORCE_HIGHLIGHTING" />
@@ -314,15 +316,7 @@
       <workItem from="1760544569907" duration="480000" />
       <workItem from="1760646232137" duration="665000" />
       <workItem from="1760822316879" duration="1020000" />
-      <workItem from="1761062156305" duration="1691000" />
-    </task>
-    <task id="LOCAL-00006" summary="Fix typo">
-      <option name="closed" value="true" />
-      <created>1755440857714</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1755440857714</updated>
+      <workItem from="1761062156305" duration="2050000" />
     </task>
     <task id="LOCAL-00007" summary="Add effect to a arrows">
       <option name="closed" value="true" />
@@ -708,7 +702,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761063835305</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'">
+      <option name="closed" value="true" />
+      <created>1761064199184</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1761064199184</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,7 +720,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp" />
     <MESSAGE value="Fixes and cleanups" />
     <MESSAGE value="-" />
     <MESSAGE value="Add consts" />
@@ -743,7 +744,8 @@
     <MESSAGE value="Fixs" />
     <MESSAGE value="Add check for vector is zero" />
     <MESSAGE value="Cleanup and fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
+    <MESSAGE value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
