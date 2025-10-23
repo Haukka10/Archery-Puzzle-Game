@@ -22,7 +22,8 @@ void UBridgeArrow::SpawnBridgeActor() const
 	const auto Br = GetWorld()->SpawnActor<AActor>(BridgeActor);
 	// Set rotation and locations for the bridge
 	Br->SetActorRotation(ActorRotation);
-	Br->SetActorLocation(FVector(OwnerTrans.GetTranslation().X + OffSet, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z));
+	const FVector NewLocation = FVector(OwnerTrans.GetTranslation().X + OffSet, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z);
+	Br->SetActorLocation(NewLocation);
 }
 
 // Called when the game starts
