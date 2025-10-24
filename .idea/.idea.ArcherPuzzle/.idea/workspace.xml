@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,14 +91,11 @@
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/GeometryCore/Private/Operations/EmbedSurfacePath.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Private/SlotBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/SlateCore/Public/SlotBase.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/Tunnel/FlyTunnel.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/LockArrows/LockArrows.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/Dialog/AudioSystem/AudioDialogSystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Private/LevelChange/LevelChangeTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sokos/OneDrive/Documents/Unreal Projects/ArcherPuzzle/Source/ArcherPuzzle/Public/Bow/Arrow/Fly/Tunnel/FlyTunnel.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/Arrow/PhaseArrow/PhaseArrow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/Bow/LockArrows/LockArrows.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ArcherPuzzle/Public/LevelChange/LevelChangeTrigger.h" root0="FORCE_HIGHLIGHTING" />
@@ -317,15 +316,9 @@
       <workItem from="1760646232137" duration="665000" />
       <workItem from="1760822316879" duration="1020000" />
       <workItem from="1761062156305" duration="2050000" />
-      <workItem from="1761233698569" duration="334000" />
-    </task>
-    <task id="LOCAL-00008" summary="Check for NAN">
-      <option name="closed" value="true" />
-      <created>1755636976690</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1755636976690</updated>
+      <workItem from="1761233698569" duration="857000" />
+      <workItem from="1761234617651" duration="275000" />
+      <workItem from="1761314208833" duration="402000" />
     </task>
     <task id="LOCAL-00009" summary="Add ForwardVector to Arrow check in BouncePadObj.cpp">
       <option name="closed" value="true" />
@@ -711,7 +704,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761233971772</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Add FVector NewLocation in BridgeArrow.cpp">
+      <option name="closed" value="true" />
+      <created>1761234204738</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1761234204738</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,7 +722,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fixes and cleanups" />
     <MESSAGE value="-" />
     <MESSAGE value="Add consts" />
     <MESSAGE value="Check for material in PhaseArrow.cpp" />
@@ -746,7 +746,8 @@
     <MESSAGE value="Add check for vector is zero" />
     <MESSAGE value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
     <MESSAGE value="Cleanup and fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
+    <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add FVector NewLocation in BridgeArrow.cpp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -40,14 +40,14 @@ void UPhaseArrow::AddWall(AActor* Actor)
 	TArray<UStaticMeshComponent*> Comps;
 	Actor->GetComponents<UStaticMeshComponent>(Comps);
 	
-	if (Comps.Num() > 0)
+	if (Comps.Num() == 0)
+		return;
+
+	const UStaticMeshComponent* FoundComp = Comps[0];
+	if (UMaterialInterface* Mat = FoundComp->GetMaterial(0))
 	{
-		const UStaticMeshComponent* FoundComp = Comps[0];
-		if (UMaterialInterface* Mat = FoundComp->GetMaterial(0))
-		{
-			// Get wall material
-			M_PreWallMaterial = Mat;
-		}
+		// Get wall material
+		M_PreWallMaterial = Mat;
 	}
 	
 	M_PrimComp = Actor->GetComponentByClass<UPrimitiveComponent>();
@@ -61,9 +61,9 @@ void UPhaseArrow::AddWall(AActor* Actor)
 void UPhaseArrow::ResetWall() const
 {
 	//Get a UStaticMeshComponent form a wall actor
-	auto c = M_WallActor->GetComponentByClass<UStaticMeshComponent>();
+	const auto StaticMeshComponent = M_WallActor->GetComponentByClass<UStaticMeshComponent>();
 	//Set an old material
-	c->SetMaterial(0,M_PreWallMaterial);
+	StaticMeshComponent->SetMaterial(0,M_PreWallMaterial);
 	//Set an old Wall collision
 	M_PrimComp->SetCollisionEnabled(M_WallCollision);
 }
