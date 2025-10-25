@@ -32,7 +32,7 @@ void UPhaseArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 	// ...
 }
 
-void UPhaseArrow::AddWall(AActor* Actor)
+void UPhaseArrow::GetWallActor(AActor* Actor)
 {
 	// Set a wall 
 	M_WallActor = Actor;

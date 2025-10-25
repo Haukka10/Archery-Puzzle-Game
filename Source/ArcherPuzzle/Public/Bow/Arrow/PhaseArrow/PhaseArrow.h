@@ -28,7 +28,7 @@ public:
 	UMaterialInterface* WallMaterial = nullptr;
 
 	UFUNCTION(BlueprintCallable)
-	void AddWall(AActor* Actor);
+	void GetWallActor(AActor* Actor);
 
 	UFUNCTION(BlueprintCallable)
 	void ResetWall() const;
