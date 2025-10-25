@@ -42,8 +42,10 @@ void UPhaseArrow::AddWall(AActor* Actor)
 	
 	if (Comps.Num() == 0)
 		return;
-
+	
+	//Get first components
 	const UStaticMeshComponent* FoundComp = Comps[0];
+	//Get Material form components
 	if (UMaterialInterface* Mat = FoundComp->GetMaterial(0))
 	{
 		// Get wall material

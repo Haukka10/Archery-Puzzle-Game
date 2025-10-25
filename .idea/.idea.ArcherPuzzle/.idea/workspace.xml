@@ -12,9 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,15 +316,7 @@
       <workItem from="1761062156305" duration="2050000" />
       <workItem from="1761233698569" duration="857000" />
       <workItem from="1761234617651" duration="275000" />
-      <workItem from="1761314208833" duration="402000" />
-    </task>
-    <task id="LOCAL-00009" summary="Add ForwardVector to Arrow check in BouncePadObj.cpp">
-      <option name="closed" value="true" />
-      <created>1755717759674</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1755717759674</updated>
+      <workItem from="1761314208833" duration="591000" />
     </task>
     <task id="LOCAL-00010" summary="Set up code for PhaseArrow.cpp and PhaseArrow.h">
       <option name="closed" value="true" />
@@ -712,7 +702,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761234204738</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Cleanup and fix formating">
+      <option name="closed" value="true" />
+      <created>1761314790989</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1761314790989</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,9 +743,9 @@
     <MESSAGE value="Fixs" />
     <MESSAGE value="Add check for vector is zero" />
     <MESSAGE value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
-    <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add FVector NewLocation in BridgeArrow.cpp" />
+    <MESSAGE value="Cleanup and fix formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
