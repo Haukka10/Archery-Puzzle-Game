@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="Add Comments">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/PhaseArrow/PhaseArrow.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -320,23 +317,7 @@
       <workItem from="1761233698569" duration="857000" />
       <workItem from="1761234617651" duration="275000" />
       <workItem from="1761314208833" duration="591000" />
-      <workItem from="1761434119188" duration="301000" />
-    </task>
-    <task id="LOCAL-00010" summary="Set up code for PhaseArrow.cpp and PhaseArrow.h">
-      <option name="closed" value="true" />
-      <created>1755809369827</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1755809369827</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Make a working code for PhaseArrow.h and PhaseArrow.cpp">
-      <option name="closed" value="true" />
-      <created>1755880487692</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1755880487692</updated>
+      <workItem from="1761434119188" duration="407000" />
     </task>
     <task id="LOCAL-00012" summary="Add const to ResetWall">
       <option name="closed" value="true" />
@@ -714,7 +695,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761314790989</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add Comments">
+      <option name="closed" value="true" />
+      <created>1761434424359</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1761434424359</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Change name of the fuc in PhaseArrow.cpp">
+      <option name="closed" value="true" />
+      <created>1761434514443</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1761434514443</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +721,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="-" />
     <MESSAGE value="Add consts" />
     <MESSAGE value="Check for material in PhaseArrow.cpp" />
     <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
@@ -749,7 +745,8 @@
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
     <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Add Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
+    <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change name of the fuc in PhaseArrow.cpp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

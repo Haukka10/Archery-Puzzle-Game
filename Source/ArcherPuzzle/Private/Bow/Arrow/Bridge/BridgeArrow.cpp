@@ -18,10 +18,12 @@ UBridgeArrow::UBridgeArrow(): M_NewRotator(0,0,0)
 ///
 void UBridgeArrow::SpawnBridgeActor() const
 {
+	//Create Bridge
 	const FTransform OwnerTrans = this->GetOwner()->GetActorTransform();
 	const auto Br = GetWorld()->SpawnActor<AActor>(BridgeActor);
 	// Set rotation and locations for the bridge
 	Br->SetActorRotation(ActorRotation);
+	//Get a location to spawn Bridge
 	const FVector NewLocation = FVector(OwnerTrans.GetTranslation().X + OffSet, OwnerTrans.GetTranslation().Y, OwnerTrans.GetTranslation().Z);
 	Br->SetActorLocation(NewLocation);
 }
