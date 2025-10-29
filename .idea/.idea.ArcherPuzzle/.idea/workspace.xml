@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/Experimental/EditorInteractiveToolsFramework/Private/Behaviors/2DViewportBehaviorTargets.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.h" root0="FORCE_HIGHLIGHTING" />
@@ -318,14 +321,8 @@
       <workItem from="1761234617651" duration="275000" />
       <workItem from="1761314208833" duration="591000" />
       <workItem from="1761434119188" duration="407000" />
-    </task>
-    <task id="LOCAL-00012" summary="Add const to ResetWall">
-      <option name="closed" value="true" />
-      <created>1755880512391</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1755880512391</updated>
+      <workItem from="1761587942761" duration="335000" />
+      <workItem from="1761753632771" duration="494000" />
     </task>
     <task id="LOCAL-00013" summary="Add level 1">
       <option name="closed" value="true" />
@@ -711,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761434514443</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Add Comments">
+      <option name="closed" value="true" />
+      <created>1761588267416</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1761588267416</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,9 +749,9 @@
     <MESSAGE value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
     <MESSAGE value="Cleanup and fix formating" />
-    <MESSAGE value="Add Comments" />
     <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change name of the fuc in PhaseArrow.cpp" />
+    <MESSAGE value="Add Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

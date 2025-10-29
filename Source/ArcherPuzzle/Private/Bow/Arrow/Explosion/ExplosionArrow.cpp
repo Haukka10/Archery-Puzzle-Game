@@ -44,6 +44,7 @@ void UExplosionArrow::CheckSphere() const
 	const AActor* Owner = GetOwner();
 	const FVector Start = Owner->GetActorLocation();
 	const FVector End = Owner->GetActorLocation();
+	//Add actors to ingore
 	TArray<AActor*> ActorToIgnore;
 	ActorToIgnore.Add(GetOwner());
 	
@@ -86,6 +87,7 @@ void UExplosionArrow::CheckSphere() const
 /// @param UPrimitive - PrimitiveComponent form actor
 void UExplosionArrow::AddImpulse(const FVector& Center, UPrimitiveComponent* UPrimitive) const
 {
+	//Check for sim physics
 	if (UPrimitive && UPrimitive->IsSimulatingPhysics())
 	{
 		UPrimitive->AddRadialImpulse(Center,Radius,StrengthOfImpulse,ERadialImpulseFalloff::RIF_Linear,true);
