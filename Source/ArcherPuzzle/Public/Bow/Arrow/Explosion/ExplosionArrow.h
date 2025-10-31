@@ -31,7 +31,7 @@ public:
 	float Radius;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Impulse|Strength Impulse")
-	float StrengthOfImpulse ;
+	float StrengthOfImpulse;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Impulse|Multiplayer")
 	float Multiplayer;

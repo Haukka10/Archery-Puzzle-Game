@@ -69,8 +69,7 @@ void UExplosionArrow::CheckSphere() const
 					const float MinStrengthOfImpulse = StrengthOfImpulse - 10;
 					float StrengthOfImpulsePlayer = FMath::Clamp(MinStrengthOfImpulse,0,StrengthOfImpulse);
 					
-					if (StrengthOfImpulse > 0)
-						StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
+					StrengthOfImpulsePlayer -= FVector::Dist(CenterVector,HitRes.ImpactPoint) * Multiplayer;
 					
 					c->LaunchCharacter({0,0,StrengthOfImpulsePlayer},false,false);
 				}
