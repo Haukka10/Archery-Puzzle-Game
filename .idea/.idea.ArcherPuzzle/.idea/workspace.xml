@@ -323,15 +323,8 @@
       <workItem from="1761434119188" duration="407000" />
       <workItem from="1761587942761" duration="335000" />
       <workItem from="1761753632771" duration="694000" />
-      <workItem from="1761933591905" duration="318000" />
-    </task>
-    <task id="LOCAL-00014" summary="Add Level2">
-      <option name="closed" value="true" />
-      <created>1756132034526</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1756132034526</updated>
+      <workItem from="1761933591905" duration="598000" />
+      <workItem from="1762016340827" duration="779000" />
     </task>
     <task id="LOCAL-00015" summary="Make a 1 and 2 levels">
       <option name="closed" value="true" />
@@ -717,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761754314011</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Delete unnecessary condition">
+      <option name="closed" value="true" />
+      <created>1761934178267</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1761934178267</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -727,7 +728,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add consts" />
     <MESSAGE value="Check for material in PhaseArrow.cpp" />
     <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
     <MESSAGE value="Add dialog system code" />
@@ -752,7 +752,8 @@
     <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
     <MESSAGE value="Add Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
+    <MESSAGE value="Delete unnecessary condition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary condition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

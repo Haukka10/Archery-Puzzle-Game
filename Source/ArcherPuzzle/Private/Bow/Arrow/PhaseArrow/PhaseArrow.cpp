@@ -51,9 +51,9 @@ void UPhaseArrow::GetWallActor(AActor* Actor)
 		// Get wall material
 		M_PreWallMaterial = Mat;
 	}
-	
+	//Get a Primitive Component
 	M_PrimComp = Actor->GetComponentByClass<UPrimitiveComponent>();
-	
+	//Check for the null ptr
 	if (M_PrimComp)
 		M_WallCollision = M_PrimComp->GetCollisionEnabled();
 	
