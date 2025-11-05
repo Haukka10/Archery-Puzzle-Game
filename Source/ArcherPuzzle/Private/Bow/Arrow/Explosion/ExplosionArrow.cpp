@@ -44,7 +44,7 @@ void UExplosionArrow::CheckSphere() const
 	const AActor* Owner = GetOwner();
 	const FVector Start = Owner->GetActorLocation();
 	const FVector End = Owner->GetActorLocation();
-	//Add actors to ingore
+	//Add actors to ignore
 	TArray<AActor*> ActorToIgnore;
 	ActorToIgnore.Add(GetOwner());
 	

@@ -14,6 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,15 +325,8 @@
       <workItem from="1761587942761" duration="335000" />
       <workItem from="1761753632771" duration="694000" />
       <workItem from="1761933591905" duration="598000" />
-      <workItem from="1762016340827" duration="779000" />
-    </task>
-    <task id="LOCAL-00015" summary="Make a 1 and 2 levels">
-      <option name="closed" value="true" />
-      <created>1756144100497</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1756144100497</updated>
+      <workItem from="1762016340827" duration="939000" />
+      <workItem from="1762373825138" duration="454000" />
     </task>
     <task id="LOCAL-00016" summary="Add level 3">
       <option name="closed" value="true" />
@@ -718,7 +712,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761934178267</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Add Comments">
+      <option name="closed" value="true" />
+      <created>1762017268053</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1762017268053</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,9 +753,9 @@
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
     <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
-    <MESSAGE value="Add Comments" />
     <MESSAGE value="Delete unnecessary condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary condition" />
+    <MESSAGE value="Add Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
