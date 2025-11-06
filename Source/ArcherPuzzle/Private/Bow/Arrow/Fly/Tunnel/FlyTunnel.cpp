@@ -60,7 +60,6 @@ void AFlyTunnel::FlyTunnelEndEffect(AActor* Actor)
 	if (Character != nullptr)
 	{
 		Character->GetCharacterMovement()->GravityScale = 0.95;
-		Character->bMovementLock = false;
 		return;
 	}
 	const auto Psy = Cast<UPrimitiveComponent>(Actor);
@@ -74,8 +73,6 @@ void AFlyTunnel::FlyTunnelEffectCharacter(AArcherPuzzleCharacter* Character) con
 {
 	Character->GetCharacterMovement()->GravityScale = 0;
 	Character->LaunchCharacter(LaunchVelocity,false,false);
-
-	Character->bMovementLock = true;
 }
 
 void AFlyTunnel::FlyTunnelEffectProjectile(UProjectileMovementComponent* Projectile)

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ArcherPuzzleCharacter.h"
 #include "GameFramework/Actor.h"
 #include "FlyTunnel.generated.h"
 

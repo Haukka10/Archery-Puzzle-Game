@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Explosion/ExplosionArrow.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,15 +323,7 @@
       <workItem from="1761753632771" duration="694000" />
       <workItem from="1761933591905" duration="598000" />
       <workItem from="1762016340827" duration="939000" />
-      <workItem from="1762373825138" duration="454000" />
-    </task>
-    <task id="LOCAL-00016" summary="Add level 3">
-      <option name="closed" value="true" />
-      <created>1756154246288</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1756154246288</updated>
+      <workItem from="1762373825138" duration="628000" />
     </task>
     <task id="LOCAL-00017" summary="Add cooldown for the arrows">
       <option name="closed" value="true" />
@@ -720,7 +709,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762017268053</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Cleanup and fix formating">
+      <option name="closed" value="true" />
+      <created>1762374436663</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1762374436663</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,11 +748,11 @@
     <MESSAGE value="Add check for vector is zero" />
     <MESSAGE value="Add const to FlyTunnel.cpp fun 'FlyTunnelEffectCharacter'" />
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
-    <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
     <MESSAGE value="Delete unnecessary condition" />
     <MESSAGE value="Add Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
+    <MESSAGE value="Cleanup and fix formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
