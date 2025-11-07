@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,14 +326,8 @@
       <workItem from="1761933591905" duration="598000" />
       <workItem from="1762016340827" duration="939000" />
       <workItem from="1762373825138" duration="628000" />
-    </task>
-    <task id="LOCAL-00017" summary="Add cooldown for the arrows">
-      <option name="closed" value="true" />
-      <created>1756325900023</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1756325900023</updated>
+      <workItem from="1762463675612" duration="854000" />
+      <workItem from="1762556655510" duration="406000" />
     </task>
     <task id="LOCAL-00018" summary="Adding documentation">
       <option name="closed" value="true" />
@@ -717,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762374436663</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Delete MovementLock">
+      <option name="closed" value="true" />
+      <created>1762463951283</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1762463951283</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -727,7 +731,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Check for material in PhaseArrow.cpp" />
     <MESSAGE value="Implementation of lock down a  individual arrows. Clean up code." />
     <MESSAGE value="Add dialog system code" />
     <MESSAGE value="Add play audio when shooting" />
@@ -752,7 +755,8 @@
     <MESSAGE value="Delete unnecessary condition" />
     <MESSAGE value="Add Comments" />
     <MESSAGE value="Cleanup and fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
+    <MESSAGE value="Delete MovementLock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete MovementLock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

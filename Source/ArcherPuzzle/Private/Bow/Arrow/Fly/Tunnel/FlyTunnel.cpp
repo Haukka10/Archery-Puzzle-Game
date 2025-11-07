@@ -29,7 +29,9 @@ void AFlyTunnel::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
+///
+/// Start effect of the fly
+/// @param Actor - what get a fly effect
 void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 {
 	const auto Character = Cast<AArcherPuzzleCharacter>(Actor);
@@ -53,7 +55,9 @@ void AFlyTunnel::FlyTunnelStartEffect(AActor* Actor)
 	Psy->SetEnableGravity(false);
 	
 }
-
+///
+/// End effect of the fly
+/// @param Actor - what actor hos no long a effects 
 void AFlyTunnel::FlyTunnelEndEffect(AActor* Actor)
 {
 	const auto Character = Cast<AArcherPuzzleCharacter>(Actor);
