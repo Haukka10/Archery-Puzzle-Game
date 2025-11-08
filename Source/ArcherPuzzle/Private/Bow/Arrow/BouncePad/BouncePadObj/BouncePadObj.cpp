@@ -33,8 +33,6 @@ void ABouncePadObj::BounceComponent(AActor* Actor)
 {
 	// Get Up Vector
 	const FVector BounceNormal = Actor->GetActorUpVector();
-	BounceMultiplier = 1.32f;
-	MinBounceSpeed = 25;
 	const auto UPrim = IsHasPhysics(Actor);
 	// Check if this actor is an Arrows
 	if (const auto Arrow = Actor->FindComponentByClass<UProjectileMovementComponent>())

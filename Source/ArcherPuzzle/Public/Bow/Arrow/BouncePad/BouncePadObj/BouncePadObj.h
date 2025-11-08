@@ -32,8 +32,8 @@ private:
 	FVector BounceStrength(const FVector& Velocity, const FVector& UpVector) const;
 	
 	UPROPERTY()
-	float BounceMultiplier;
+	float BounceMultiplier = 1.32f;
 	
 	UPROPERTY()
-	float MinBounceSpeed;
+	float MinBounceSpeed = 25;
 };

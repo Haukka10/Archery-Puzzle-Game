@@ -14,7 +14,7 @@ UFlyArrow::UFlyArrow()
 
 ///
 /// Spawn a fly tunnel 
-/// @param FlyTunnelLoc - Where to spawn a tunel
+/// @param FlyTunnelLoc - Where to spawn a tunnel
 void UFlyArrow::SpawnFlyTunnel(FVector FlyTunnelLoc) const
 {
 	if (FlyTunnel == nullptr)
