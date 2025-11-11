@@ -32,6 +32,8 @@ void UPhaseArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 	// ...
 }
 
+/// Get all material and a mesh's form the actor
+/// @param Actor 
 void UPhaseArrow::GetWallActor(AActor* Actor)
 {
 	// Set a wall 

@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/FlyArrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ArcherPuzzle/Private/Bow/Arrow/Fly/FlyArrow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,15 +328,8 @@
       <workItem from="1762373825138" duration="628000" />
       <workItem from="1762463675612" duration="854000" />
       <workItem from="1762556655510" duration="738000" />
-      <workItem from="1762626020321" duration="316000" />
-    </task>
-    <task id="LOCAL-00019" summary="Adding documentation to PhaseArrow.cpp">
-      <option name="closed" value="true" />
-      <created>1756478321461</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1756478321461</updated>
+      <workItem from="1762626020321" duration="373000" />
+      <workItem from="1762863406897" duration="756000" />
     </task>
     <task id="LOCAL-00020" summary="Add Ground to chcek is time in 'IsTimerStart' files BowComponent.cpp">
       <option name="closed" value="true" />
@@ -723,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762557381149</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Cleanup and fix formating">
+      <option name="closed" value="true" />
+      <created>1762626383454</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1762626383454</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,10 +755,10 @@
     <MESSAGE value="Add FVector NewLocation in BridgeArrow.cpp" />
     <MESSAGE value="Change name of the fuc in PhaseArrow.cpp" />
     <MESSAGE value="Delete unnecessary condition" />
-    <MESSAGE value="Cleanup and fix formating" />
     <MESSAGE value="Delete MovementLock" />
     <MESSAGE value="Add Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
+    <MESSAGE value="Cleanup and fix formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and fix formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
