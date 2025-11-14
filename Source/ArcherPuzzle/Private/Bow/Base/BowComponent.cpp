@@ -97,9 +97,10 @@ void UBowComponent::IsTimerDone() const
 ///
 void UBowComponent::ShootArrow() const
 {
+	//Check for sound class is not a nullptr
 	if (SoundClass == nullptr)
 		return;
-	
+	//Check for if player can shoot
 	if (!M_IsCanShoot)
 		return;
 	
