@@ -33,7 +33,7 @@ void UPhaseArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 }
 
 /// Get all material and a mesh's form the actor
-/// @param Actor 
+/// @param Actor - Get actor to get all mesh's 
 void UPhaseArrow::GetWallActor(AActor* Actor)
 {
 	// Set a wall 
@@ -61,7 +61,9 @@ void UPhaseArrow::GetWallActor(AActor* Actor)
 	
 	ChangeProperty();
 }
-
+///
+/// Reset all mesh - set old material and collision
+///
 void UPhaseArrow::ResetWall() const
 {
 	//Get a UStaticMeshComponent form a wall actor
