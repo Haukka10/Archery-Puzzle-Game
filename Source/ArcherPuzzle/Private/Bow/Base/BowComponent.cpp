@@ -38,7 +38,7 @@ bool UBowComponent::CanChangeArrow(const TSubclassOf<AActor>& SelArrow)
 	if (M_IndexOfArrow > M_ArrowActors.Num())
 	{
 		M_IndexOfArrow = 0;
-		UE_LOG(LogTemp, Log, TEXT("Change to index: 0"));
+		UE_LOG(LogTemp, Log, TEXT("Change index to 0"));
 	}
 	
 	if (SelArrow == nullptr)
@@ -128,18 +128,20 @@ void UBowComponent::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	// add all arrows to list
-	for (auto const& [v,k] : ArrowCooldown)
-	{
-		M_ArrowActors.Add(v);
-	}
-	
 	// Check for length of ArrowCooldown map to not break the game
 	if (ArrowCooldown.Num() == 0)
 	{
 		UE_LOG(LogTemp, Error, TEXT("ArrowCooldown map is empty"));
 		return;
 	}
+	
+	// add all arrows to list
+	for (auto const& [v,k] : ArrowCooldown)
+	{
+		M_ArrowActors.Add(v);
+	}
+
+	
 	//Set default arrow (first item form the list of arrows) 
 	M_CurrentArrowShoot = M_ArrowActors[0];
 }
