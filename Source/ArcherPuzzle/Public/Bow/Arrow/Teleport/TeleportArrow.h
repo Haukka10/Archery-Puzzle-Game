@@ -40,4 +40,6 @@ private:
 	int M_Offset = 25;
 	UPROPERTY()
 	int M_OffsetEnd = 250;
+	UPROPERTY()
+	UWorld* CachedWorld;
 };

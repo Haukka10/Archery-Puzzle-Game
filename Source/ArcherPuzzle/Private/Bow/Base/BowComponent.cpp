@@ -55,25 +55,27 @@ bool UBowComponent::CanChangeArrow(const TSubclassOf<AActor>& SelArrow)
 /// @param Index index of the arrow 
 void UBowComponent::ChangeArrow(const int Index)
 {
-	const TSubclassOf<AActor> CurrentArrowShootBuffer  = M_ArrowActors[Index];
+	const TSubclassOf<AActor>& CurrentArrowShootBuffer = M_ArrowActors[Index];
+
 	//Check for lock arrow
-	if (!LockArrows->IsLockArrow(CurrentArrowShootBuffer))
+	if (LockArrows->IsLockArrow(CurrentArrowShootBuffer))
+	{
+		UE_LOG(LogTemp, Log, TEXT("Arrow Lock"));
+		return;
+	}
+	
+	if (CanChangeArrow(CurrentArrowShootBuffer))
 	{
 		M_IndexOfArrow = Index;
-		if (!CanChangeArrow(CurrentArrowShootBuffer))
-		{
-			UE_LOG(LogTemp, Error, TEXT("Change failed"));
-			return;
-		}
 		M_CurrentArrowShoot = CurrentArrowShootBuffer;
 	}
 	else
 	{
-		UE_LOG(LogTemp, Log, TEXT("Arrow Lock"));
+		UE_LOG(LogTemp, Error, TEXT("Change failed"));
 	}
 }
 // Make a Timer Handle
-FTimerHandle MyTimerHandle;
+FTimerHandle TimerHandle;
 void UBowComponent::IsTimerStart() const
 {
 	M_IsCanShoot = false;
@@ -82,14 +84,14 @@ void UBowComponent::IsTimerStart() const
 	if (CooldownTime == nullptr)
 		return;
 	
-	GetWorld()->GetTimerManager().SetTimer(MyTimerHandle, this, &UBowComponent::IsTimerDone, *CooldownTime, false);
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &UBowComponent::IsTimerDone, *CooldownTime, false);
 }
 ///
 /// Setting an M_IsCanShoot to true and clear timer
 ///
 void UBowComponent::IsTimerDone() const
 {
-	GetWorld()->GetTimerManager().ClearTimer(MyTimerHandle);
+	GetWorld()->GetTimerManager().ClearTimer(TimerHandle);
 	M_IsCanShoot = true;
 }
 ///

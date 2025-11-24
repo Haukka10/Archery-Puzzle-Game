@@ -8,7 +8,7 @@ UTeleportArrow::UTeleportArrow()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = false;
 
 	// ...
 }
@@ -18,7 +18,7 @@ UTeleportArrow::UTeleportArrow()
 void UTeleportArrow::BeginPlay()
 {
 	Super::BeginPlay();
-
+	CachedWorld = GetWorld();
 	// ...
 	
 }
@@ -34,11 +34,18 @@ void UTeleportArrow::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 {
-	//Check fot valid pos to teleport
+	if (!PlayerToTele)
+	{
+		UE_LOG(LogTemp, Error, TEXT("PlayerToTele is null"));
+		return;
+	}
+	
 	if (!IsValidPos(TeleLoc))
-		GEngine->AddOnScreenDebugMessage(-1,2.F,FColor::Cyan,FString::Printf(TEXT("Not Teleporting (not valid pos)")));
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Cannot teleport: invalid position"));
+		return; // Exit early
+	}
 
-	// Teleport to new pos
 	PlayerToTele->SetActorLocation(TeleLoc);
 }
 
@@ -48,8 +55,8 @@ void UTeleportArrow::TeleportPlayer(const FVector TeleLoc) const
 /// @return true/false - true when Location is valid, otherwise false
 bool UTeleportArrow::IsValidPos(const FVector& TeleLoc) const
 {
-	GWorld = GetWorld();
-	if (GWorld == nullptr)
+	
+	if (CachedWorld == nullptr)
 		return false;
 	
 	const FVector Start = {TeleLoc.X + M_Offset,TeleLoc.Y + M_Offset,TeleLoc.Z + M_Offset};
