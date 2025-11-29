@@ -83,18 +83,17 @@ UPrimitiveComponent* ABouncePadObj::IsHasPhysics(const AActor* Act)
 /// @return New Velocity
 FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& UpVector) const
 {
-	
 	const float SpeedIntoPad = FVector::DotProduct(Velocity, -UpVector);
 	const float BounceSpeed = FMath::Max(SpeedIntoPad * BounceMultiplier, MinBounceSpeed);
-
-	if (Velocity.Z >= -1700.F)
-		return UpVector * 1800.f;
 	
 	const FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, UpVector) * UpVector;
 	const FVector NewVelocity = TangentVelocity + UpVector * BounceSpeed;
 	
 	if (NewVelocity.ContainsNaN())
-		return UpVector * MinBounceSpeed; 
+		return UpVector * MinBounceSpeed;
+
+	if (Velocity.Z >= -1700.F)
+		return UpVector * 1800.f;
 
 	return UpVector * 1800.f;
 }
