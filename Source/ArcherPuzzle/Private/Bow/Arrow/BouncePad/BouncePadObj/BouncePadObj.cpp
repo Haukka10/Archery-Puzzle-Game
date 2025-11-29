@@ -93,7 +93,7 @@ FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& Up
 		return UpVector * MinBounceSpeed;
 
 	if (Velocity.Z >= -1700.F)
-		return UpVector * 1800.f;
+		return NewVelocity;
 
 	return UpVector * 1800.f;
 }
