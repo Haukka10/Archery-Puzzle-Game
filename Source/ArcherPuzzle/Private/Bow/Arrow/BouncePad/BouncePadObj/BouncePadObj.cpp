@@ -29,7 +29,7 @@ void ABouncePadObj::Tick(float DeltaTime)
 
 }
 
-void ABouncePadObj::BounceComponent(AActor* Actor)
+void ABouncePadObj::BounceComponent(AActor* Actor) const
 {
 	// Get Up Vector
 	const FVector BounceNormal = Actor->GetActorUpVector();
@@ -87,15 +87,15 @@ FVector ABouncePadObj::BounceStrength(const FVector& Velocity, const FVector& Up
 	const float SpeedIntoPad = FVector::DotProduct(Velocity, -UpVector);
 	const float BounceSpeed = FMath::Max(SpeedIntoPad * BounceMultiplier, MinBounceSpeed);
 
+	if (Velocity.Z >= -1700.F)
+		return UpVector * 1800.f;
+	
 	const FVector TangentVelocity = Velocity - FVector::DotProduct(Velocity, UpVector) * UpVector;
 	const FVector NewVelocity = TangentVelocity + UpVector * BounceSpeed;
 	
-	if (FMath::IsNaN(NewVelocity.Z) && FMath::IsNaN(NewVelocity.X) && FMath::IsNaN(NewVelocity.Y))
-		return UpVector;
-	
-	if (Velocity.Z >= -1700.F)
-		return NewVelocity;
+	if (NewVelocity.ContainsNaN())
+		return UpVector * MinBounceSpeed; 
 
-	return {0,0,1800};
+	return UpVector * 1800.f;
 }
 

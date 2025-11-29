@@ -24,7 +24,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	void BounceComponent(AActor* Actor);
+	void BounceComponent(AActor* Actor) const;
 
 private:
 	static UPrimitiveComponent* IsHasPhysics(const AActor* Act);
