@@ -76,6 +76,9 @@ void UBowComponent::ChangeArrow(const int Index)
 }
 // Make a Timer Handle
 FTimerHandle TimerHandle;
+///
+/// Set a timer time to cooldown arrow shoot
+///
 void UBowComponent::IsTimerStart() const
 {
 	M_IsCanShoot = false;

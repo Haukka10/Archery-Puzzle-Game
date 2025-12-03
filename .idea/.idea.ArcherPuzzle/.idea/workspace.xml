@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="" />
+    <list default="true" id="f5f3b366-c28a-4b00-b629-c08a0da9cd83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcherPuzzle/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,23 +252,8 @@
       <workItem from="1763160579982" duration="475000" />
       <workItem from="1763549161621" duration="1483000" />
       <workItem from="1764027595395" duration="666000" />
-      <workItem from="1764459919412" duration="618000" />
-    </task>
-    <task id="LOCAL-00026" summary="Fixes and cleanups. Adding documentation">
-      <option name="closed" value="true" />
-      <created>1757102432201</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1757102432202</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Add dialog system code">
-      <option name="closed" value="true" />
-      <created>1757256768853</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1757256768855</updated>
+      <workItem from="1764459919412" duration="741000" />
+      <workItem from="1764783832520" duration="967000" />
     </task>
     <task id="LOCAL-00028" summary="Add play audio when shooting">
       <option name="closed" value="true" />
@@ -644,7 +631,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764460336097</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Fix code">
+      <option name="closed" value="true" />
+      <created>1764460574398</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1764460574398</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Fix code">
+      <option name="closed" value="true" />
+      <created>1764460650187</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1764460650187</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +657,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add play audio when shooting" />
     <MESSAGE value="Add code for the anim and audio" />
     <MESSAGE value="Fixes and cleanups. Adding documentation" />
     <MESSAGE value="Add to all arrows a Texture 2D" />
@@ -679,7 +681,8 @@
     <MESSAGE value="Add Comments" />
     <MESSAGE value="Fix if for length of the map in BowComponent.cpp" />
     <MESSAGE value="Optimized code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized code" />
+    <MESSAGE value="Fix code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
