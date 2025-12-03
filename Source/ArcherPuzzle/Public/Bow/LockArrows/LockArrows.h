@@ -27,5 +27,5 @@ public:
 	TArray<TSubclassOf<AActor>> M_ArrowsList;
 	
 	UFUNCTION()
-	bool IsLockArrow(const TSubclassOf<AActor>& Arrow) const;
+	bool IsLockArrow(const TSubclassOf<AActor>& Arrow);
 };
